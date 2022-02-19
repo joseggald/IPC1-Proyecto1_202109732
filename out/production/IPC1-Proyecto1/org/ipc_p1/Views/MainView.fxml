@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.MainController">
    <children>
-      <Button fx:id="btnLogin" layoutX="268.0" layoutY="169.0" mnemonicParsing="false" onAction="#ventanaLogin" text="Ejecutar" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="47.0" layoutY="37.0" stroke="#1d4a6f" strokeType="INSIDE" width="407.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="173.0" layoutX="13.0" layoutY="100.0" stroke="#1d4a6f" strokeType="INSIDE" width="483.0" />
+      <Button fx:id="btnLogin" layoutX="259.0" layoutY="135.0" mnemonicParsing="false" onAction="#ventanaLogin" prefHeight="43.0" prefWidth="183.0" text="Login" />
+      <Button layoutX="259.0" layoutY="195.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="183.0" text="About" />
+      <ImageView fitHeight="148.0" fitWidth="149.0" layoutX="51.0" layoutY="113.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../resources/images/3.png" />
+         </image>
+      </ImageView>
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="37.0" prefHeight="43.0" prefWidth="398.0" text="Sistema de Biblioteca USAC" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

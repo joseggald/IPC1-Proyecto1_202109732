@@ -20,14 +20,14 @@
     -fx-text-fill: white;
     -fx-font-family: "Bahnschrift";
     -fx-font-weight: bold;
-    -fx-background-color: #fe8b70;
+    -fx-background-color: #2e6280;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }
 
 #titulo-text {
     -fx-font-size: 29px;
     -fx-font-family: "Bahnschrift";
-    -fx-text-fill: white;
+    -fx-text-fill: #2e6280;
     -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 #actiontarget {

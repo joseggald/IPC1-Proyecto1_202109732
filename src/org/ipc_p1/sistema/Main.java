@@ -7,12 +7,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.ipc_p1.controllers.AdminController;
 import org.ipc_p1.controllers.LoginController;
 import org.ipc_p1.controllers.MainController;
+import org.ipc_p1.controllers.UsuarioController;
+import org.ipc_p1.models.Usuario;
 
 import java.io.IOException;
 
 public class Main extends Application {
+
 
     private final String CarpetaViews="../views/";
     private Stage escenarioPrincipal;
@@ -27,7 +31,7 @@ public class Main extends Application {
 
     public void cambiarEscenaMain(){
         try{
-            MainController controlador = (MainController) this.cambiarEscena("MainView.fxml",600,400);
+            MainController controlador = (MainController) this.cambiarEscena("MainView.fxml",509,416);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
@@ -36,7 +40,26 @@ public class Main extends Application {
     }
     public void cambiarEscenaLogin(){
         try{
-            LoginController controlador = (LoginController) this.cambiarEscena("LoginView.fxml",800,800);
+            LoginController controlador = (LoginController) this.cambiarEscena("LoginView.fxml",391,350);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaAdmin(){
+        try{
+            AdminController controlador = (AdminController) this.cambiarEscena("AdminView.fxml",571,231);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void cambiarEscenaCrearUsuario(){
+        try{
+            UsuarioController controlador = (UsuarioController) this.cambiarEscena("UsuariosCrearView.fxml",567,590);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
