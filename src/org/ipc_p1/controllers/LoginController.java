@@ -17,7 +17,7 @@ public class LoginController implements Initializable {
 
     @FXML private TextField txtUsuario;
     @FXML private PasswordField txtPassword;
-    Usuario user = Usuario.getInstance();
+
     Funciones funciones=new Funciones();
     @Override
 

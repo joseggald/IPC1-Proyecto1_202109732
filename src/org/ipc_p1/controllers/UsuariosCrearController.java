@@ -13,10 +13,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.ResourceBundle;
 
-public class UsuarioController implements Initializable {
+public class UsuariosCrearController implements Initializable {
 
-
-    int cont,a;
     private Main escenarioPrincipal;
     @FXML private TextField txtDpi;
     @FXML private TextField txtUsuario;
@@ -25,7 +23,7 @@ public class UsuarioController implements Initializable {
     @FXML private ComboBox<String> cmbRol;
     @FXML private TextField txtPassword;
     @FXML private TextField txtPassRevisar;
-    Usuario user = Usuario.getInstance();
+
     Funciones funciones=new Funciones();
 
 
@@ -39,8 +37,9 @@ public class UsuarioController implements Initializable {
         this.escenarioPrincipal = escenarioPrincipal;
     }
     public void ventanaMain(){
-        this.escenarioPrincipal.cambiarEscenaAdmin();
+        this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
     }
+
     public void crearUsuario(){
         String usuario, nombre, apellido, rol, password, password2;
         int dpi;
@@ -51,13 +50,11 @@ public class UsuarioController implements Initializable {
         rol=cmbRol.getSelectionModel().getSelectedItem();
         password=txtPassword.getText();
         password2=txtPassRevisar.getText();
-        Usuario user=new Usuario();
+
         if(password.equals(password2) && txtDpi.getText().length()>1 && txtNombre.getText().length()>1 && txtPassword.getText().length()>1 && txtApellido.getText().length()>1 && txtPassRevisar.getText().length()>1 && txtUsuario.getText().length()>1 && cmbRol.getSelectionModel().getSelectedItem().length()>1 ){
-
             funciones.crearUsuario(dpi,nombre,apellido,usuario,password,rol);
-            this.escenarioPrincipal.cambiarEscenaAdmin();
+            this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
         }else{
-
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
             aviso.setHeaderText("Registro no guardado!");

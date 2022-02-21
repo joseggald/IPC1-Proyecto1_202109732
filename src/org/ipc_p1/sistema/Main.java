@@ -1,17 +1,15 @@
 package org.ipc_p1.sistema;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import org.ipc_p1.controllers.AdminController;
-import org.ipc_p1.controllers.LoginController;
-import org.ipc_p1.controllers.MainController;
-import org.ipc_p1.controllers.UsuarioController;
-import org.ipc_p1.models.Usuario;
+import org.ipc_p1.controllers.*;
+import org.ipc_p1.models.UsuarioTable;
 
 import java.io.IOException;
 
@@ -59,13 +57,41 @@ public class Main extends Application {
 
     public void cambiarEscenaCrearUsuario(){
         try{
-            UsuarioController controlador = (UsuarioController) this.cambiarEscena("UsuariosCrearView.fxml",567,590);
+            UsuariosCrearController controlador = (UsuariosCrearController) this.cambiarEscena("UsuariosCrearView.fxml",567,590);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
         }
 
     }
+    public void cambiarEscenaVentanaUsuarios(){
+        try{
+            VentanaUsuarioController controlador = (VentanaUsuarioController) this.cambiarEscena("VentanaUsuarioView.fxml",1497,590);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaVentanaUsuariosMod(){
+        try{
+            VentanaUsuarioController controlador = (VentanaUsuarioController) this.cambiarEscena("VentanaUsuarioView.fxml",1497,590);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarModificarUsuarios(ObservableList<UsuarioTable> selectedItems){
+        try{
+            UsuariosModificarController controlador = (UsuariosModificarController) this.cambiarEscena("UsuariosModificarView.fxml",567,590);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
     public Initializable cambiarEscena(String escena, int ancho, int alto) throws IOException {
         Initializable resultado = null;
         FXMLLoader cargadorFXML = new FXMLLoader(getClass().getResource(this.CarpetaViews + escena));

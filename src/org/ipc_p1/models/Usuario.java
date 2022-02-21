@@ -1,6 +1,11 @@
 package org.ipc_p1.models;
 
 import java.io.Serializable;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import org.ipc_p1.controllers.LoginController;
 public class Usuario{
     //Variables para recibir.
@@ -10,6 +15,9 @@ public class Usuario{
     private String nombre;
     private String apellido;
     private String rol;
+
+
+
 
     String res;
     public static Usuario user;
@@ -21,15 +29,6 @@ public class Usuario{
         this.nombre=nombre;
         this.apellido=apellido;
         this.rol=rol;
-    }
-    public Usuario() {
-
-    }
-    public static Usuario getInstance(){
-        if (user==null) {
-            user= new Usuario();
-        }
-        return user;
     }
 
 

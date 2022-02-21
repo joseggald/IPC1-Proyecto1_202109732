@@ -20,7 +20,7 @@ public class AdminController implements Initializable {
         this.escenarioPrincipal.cambiarEscenaMain();
     }
     public void crearUser(){
-        this.escenarioPrincipal.cambiarEscenaCrearUsuario();
+        this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
     }
 
 }

@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="590.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.UsuarioController">
+<AnchorPane prefHeight="590.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.UsuariosCrearController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="149.0" layoutY="29.0" stroke="#1d4a6f" strokeType="INSIDE" width="256.0" />
       <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="29.0" prefHeight="43.0" prefWidth="213.0" text="Crear Usuarios" textAlignment="CENTER">

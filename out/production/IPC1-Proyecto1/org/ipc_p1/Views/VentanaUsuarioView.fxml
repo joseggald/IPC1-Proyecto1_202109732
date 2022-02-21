@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventana" prefHeight="607.0" prefWidth="1497.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.VentanaUsuarioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="357.0" layoutY="40.0" stroke="#1d4a6f" strokeType="INSIDE" width="256.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="382.0" layoutY="40.0" prefHeight="43.0" prefWidth="213.0" text="Usuarios" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="460.0" layoutX="21.0" layoutY="92.0" stroke="#1d4a6f" strokeType="INSIDE" width="936.0" />
+      <Button fx:id="aceptar" layoutX="247.0" layoutY="414.0" mnemonicParsing="false" onAction="#ventanaUsuario" prefHeight="43.0" prefWidth="148.0" text="Crear Usuario" />
+      <TableView fx:id="tblUsuario" layoutX="45.0" layoutY="116.0" prefHeight="263.0" prefWidth="883.0">
+        <columns>
+          <TableColumn fx:id="colDpi" prefWidth="123.0" text="DPI" />
+          <TableColumn fx:id="colNom" prefWidth="113.0" text="Nombre " />
+            <TableColumn fx:id="colApe" prefWidth="133.0" text="Apellido" />
+            <TableColumn fx:id="colUser" prefWidth="165.0" text="Username" />
+            <TableColumn fx:id="colPass" prefWidth="184.0" text="Password" />
+            <TableColumn fx:id="colRol" prefWidth="163.0" text="Roles" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="62.0" fitWidth="103.0" layoutX="31.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="modificar" layoutX="412.0" layoutY="414.0" mnemonicParsing="false" onAction="#modificarUsuario" prefHeight="43.0" prefWidth="148.0" text="Modificar Usuario" />
+      <Button fx:id="eliminar" layoutX="578.0" layoutY="414.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="148.0" text="Eliminar Usuario" />
+      <Button fx:id="regresar" layoutX="31.0" layoutY="461.0" mnemonicParsing="false" onAction="#ventanaMain" prefHeight="83.0" prefWidth="103.0" text="REGRESAR " />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="460.0" layoutX="970.0" layoutY="92.0" stroke="#1d4a6f" strokeType="INSIDE" width="492.0" />
+      <TextField fx:id="txtUsuario" layoutX="1211.0" layoutY="169.0" />
+      <Label layoutX="1138.0" layoutY="172.0" text="Usuario:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1101.0" layoutY="354.0" prefHeight="25.0" prefWidth="97.0" text="Contraseña:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnModificar" layoutX="1075.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnModificar" prefHeight="31.0" prefWidth="124.0" text="Modificar" />
+      <Button fx:id="btnCancelar" layoutX="1226.0" layoutY="474.0" mnemonicParsing="false" text="Cancelar" />
+      <TextField fx:id="txtDpi" layoutX="1211.0" layoutY="117.0" />
+      <Label layoutX="1163.0" layoutY="120.0" text="DPI:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1136.0" layoutY="219.0" text="Nombre:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1167.0" layoutY="309.0" text="Rol:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1022.0" layoutY="403.0" prefHeight="25.0" prefWidth="187.0" text="Confirmar Contraseña:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1133.0" layoutY="264.0" text="Apellido:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRol" layoutX="1212.0" layoutY="307.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="txtNombre" layoutX="1212.0" layoutY="216.0" />
+      <TextField fx:id="txtApellido" layoutX="1212.0" layoutY="261.0" />
+      <TextField fx:id="txtPassword" layoutX="1210.0" layoutY="351.0" />
+      <TextField fx:id="txtPassRevisar" layoutX="1211.0" layoutY="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="1070.0" layoutY="40.0" stroke="#1d4a6f" strokeType="INSIDE" width="256.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="1095.0" layoutY="40.0" prefHeight="43.0" prefWidth="213.0" text="Modificar" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
