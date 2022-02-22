@@ -13,6 +13,7 @@ import org.ipc_p1.sistema.Main;
 import sun.security.krb5.internal.tools.Ktab;
 
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class VentanaUsuarioController implements Initializable {
@@ -33,6 +34,7 @@ public class VentanaUsuarioController implements Initializable {
     @FXML private TextField txtPassRevisar;
     @FXML private TextField txtDpi;
     @FXML private Button btnModificar;
+    @FXML private Button btnCancelarMod;
     @FXML private AnchorPane ventana;
     int [] dpi=new int[100];
     String [] nom=new String[100];
@@ -54,6 +56,7 @@ public class VentanaUsuarioController implements Initializable {
         txtPassRevisar.setDisable(true);
         cmbRol.setDisable(true);
         btnModificar.setDisable(true);
+        btnCancelarMod.setDisable(true);
         int tam;
         tam=funciones.lim();
         System.out.println(tam);
@@ -193,10 +196,10 @@ public class VentanaUsuarioController implements Initializable {
 
     public void modificarUsuario(){
         String a;
-        if(this.tblUsuario.getSelectionModel().getSelectedItem()== null){
+        if(this.tblUsuario.getSelectionModel().getSelectedItem() == null){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
-            aviso.setTitle("Kalum v1.0.0");
-            aviso.setHeaderText("Administración de Horarios.");
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO SELECCIONADO");
             aviso.setContentText("Debe de seleccionar un registro.");
             aviso.show();
         }else{
@@ -225,31 +228,58 @@ public class VentanaUsuarioController implements Initializable {
             cmbRol.getItems().add("Usuario");
             cmbRol.getItems().add("Administrador");
             btnModificar.setDisable(false);
+            btnCancelarMod.setDisable(false);
         }
 
     }
     public void btnModificar(){
+
         if(txtPassword.getText().equals(txtPassRevisar.getText())){
             int dp;
             String nom,ape,pass,user,rol;
             dp=Integer.parseInt(txtDpi.getText());
             nom=txtNombre.getText();
-            ape=txtNombre.getText();
+            ape=txtApellido.getText();
             pass=txtPassword.getText();
             user=txtUsuario.getText();
-           
-                rol=cmbRol.getSelectionModel().getSelectedItem();
+            rol=cmbRol.getSelectionModel().getSelectedItem();
 
             funciones.modificarUsuario(dp,nom,ape,user,pass,rol);
             this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
         }else {
             Alert aviso = new Alert(Alert.AlertType.ERROR);
-            aviso.setTitle("Kalum v1.0.0");
-            aviso.setHeaderText("Administración de Horarios.");
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO MODIFICADO");
             aviso.setContentText("Debe de coincidir la nueva contraseña.");
             aviso.show();
         }
 
     }
+    public void btnEliminar(){
+        if(this.tblUsuario.getSelectionModel().getSelectedItem()== null){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO SELECCIONADO");
+            aviso.setContentText("Debe de seleccionar un registro.");
+            aviso.show();
+        }
+        else{
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Eliminar Usuario.");
+            aviso.setContentText("Esta seguro de eliminar?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                int dpi=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getCui();
+                funciones.eliminarUsuario(dpi);
+                this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
+            }
+
+        }
+    }
+    public void cancelarMod(){
+        this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
+    }
+
 
 }

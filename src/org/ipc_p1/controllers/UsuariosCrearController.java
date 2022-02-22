@@ -42,7 +42,7 @@ public class UsuariosCrearController implements Initializable {
 
     public void crearUsuario(){
         String usuario, nombre, apellido, rol, password, password2;
-        int dpi;
+        int dpi, a=1;
         dpi=Integer.parseInt(txtDpi.getText());
         usuario=txtUsuario.getText();
         nombre=txtNombre.getText();

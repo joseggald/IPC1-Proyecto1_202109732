@@ -97,6 +97,30 @@ public class Funciones {
             }
         }
     }
+    //ELIMINAR USUARIO
+    public static void eliminarUsuario(int dp){
+        if(users[0].getDpi()==dp){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO ELIMINADO");
+            aviso.setContentText("No puede ser eliminado el Administrador principal.");
+            aviso.show();
+        }
+        for (int i=1; i<(cont); i++){
+            if(users[i].getDpi()==dp){
+                users[i]=null;
+                System.out.println(users[i]);
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro eliminado exitosamente!");
+                aviso.setContentText("Puede continuar!");
+                aviso.show();
+                cont=cont-1;
+                i=limite;
+            }
+        }
+    }
+
 
     //MOSTRAR USUARIOS
     //DPI
