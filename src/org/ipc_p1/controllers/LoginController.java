@@ -18,7 +18,7 @@ public class LoginController implements Initializable {
     @FXML private TextField txtUsuario;
     @FXML private PasswordField txtPassword;
 
-    Funciones funciones=new Funciones();
+    FuncionesUsuario funcionesUsuario =new FuncionesUsuario();
     @Override
 
     public void initialize(URL location, ResourceBundle resources) {
@@ -38,8 +38,9 @@ public class LoginController implements Initializable {
         us=txtUsuario.getText();
         ps=txtPassword.getText();
 
-        funciones.login(us, ps);
-        if (funciones.res.equals("1")){
+        funcionesUsuario.login(us, ps);
+
+        if (funcionesUsuario.res.equals("1")){
             this.escenarioPrincipal.cambiarEscenaAdmin();
         }
 

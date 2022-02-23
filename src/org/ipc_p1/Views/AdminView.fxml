@@ -32,7 +32,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Bibliografía">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Registros y Datos de Bibliografía" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaBilio" text="Registros y Datos de Bibliografía" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Reportes">

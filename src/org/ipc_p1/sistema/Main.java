@@ -1,7 +1,7 @@
 package org.ipc_p1.sistema;
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.ipc_p1.controllers.*;
-import org.ipc_p1.models.UsuarioTable;
+
 
 import java.io.IOException;
 
@@ -73,24 +73,25 @@ public class Main extends Application {
         }
 
     }
-    public void cambiarEscenaVentanaUsuariosMod(){
+    public void cambiarEscenaVentanaBiblio(){
         try{
-            VentanaUsuarioController controlador = (VentanaUsuarioController) this.cambiarEscena("VentanaUsuarioView.fxml",1497,590);
+            VentanaBibliotecaController controlador = (VentanaBibliotecaController) this.cambiarEscena("VentanaBibliotecaView.fxml",1569,851);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
         }
 
     }
-    public void cambiarModificarUsuarios(ObservableList<UsuarioTable> selectedItems){
+    public void cambiarEscenaCrearIndiviBiblio(){
         try{
-            UsuariosModificarController controlador = (UsuariosModificarController) this.cambiarEscena("UsuariosModificarView.fxml",567,590);
+            BiliotecaCrearController controlador = (BiliotecaCrearController) this.cambiarEscena("BibliotecaCrearView.fxml",567,590);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
         }
 
     }
+
 
     public Initializable cambiarEscena(String escena, int ancho, int alto) throws IOException {
         Initializable resultado = null;

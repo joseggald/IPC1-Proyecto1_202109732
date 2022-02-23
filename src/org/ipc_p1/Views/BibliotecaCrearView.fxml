@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="699.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.BiliotecaCrearController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="145.0" layoutY="43.0" stroke="#1d4a6f" strokeType="INSIDE" width="301.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="43.0" prefHeight="43.0" prefWidth="250.0" text="Crear Bibliografías" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="572.0" layoutX="35.0" layoutY="102.0" stroke="#1d4a6f" strokeType="INSIDE" width="492.0" />
+      <Button fx:id="aceptar" layoutX="191.0" layoutY="618.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="77.0" text="Crear" />
+      <Button fx:id="cancelar" layoutX="295.0" layoutY="618.0" mnemonicParsing="false" onAction="#ventanaMain" text="Cancelar" />
+      <TextField fx:id="txtAutor" layoutX="224.0" layoutY="132.0" />
+      <Label layoutX="171.0" layoutY="135.0" text="Autor:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAño" layoutX="227.0" layoutY="184.0" />
+      <Label layoutX="181.0" layoutY="187.0" text="Año:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTitulo" layoutX="227.0" layoutY="236.0" />
+      <Label layoutX="168.0" layoutY="239.0" text="Titulo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDesc" layoutX="229.0" layoutY="287.0" />
+      <Label layoutX="131.0" layoutY="290.0" text="Descripción:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPalabra" layoutX="226.0" layoutY="332.0" />
+      <Label layoutX="150.0" layoutY="335.0" text="Palabras:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCopias" layoutX="228.0" layoutY="377.0" />
+      <Label layoutX="168.0" layoutY="378.0" text="Copias:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtArea" layoutX="227.0" layoutY="422.0" />
+      <Label layoutX="180.0" layoutY="425.0" text="Area:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="555.0" text="Tipo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbTipo" layoutX="230.0" layoutY="554.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="txtCate" layoutX="230.0" layoutY="465.0" />
+      <Label layoutX="146.0" layoutY="468.0" text="Categoría:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIsbn" layoutX="229.0" layoutY="509.0" />
+      <Label layoutX="180.0" layoutY="512.0" text="ISBN:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

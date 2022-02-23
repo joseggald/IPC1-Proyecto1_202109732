@@ -7,10 +7,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import org.ipc_p1.models.Usuario;
 import org.ipc_p1.models.UsuarioTable;
 import org.ipc_p1.sistema.Main;
-import sun.security.krb5.internal.tools.Ktab;
 
 import java.net.URL;
 import java.util.Optional;
@@ -19,6 +17,7 @@ import java.util.ResourceBundle;
 public class VentanaUsuarioController implements Initializable {
     private Main escenarioPrincipal;
     private static UsuarioTable users[]=new UsuarioTable[100];
+
     @FXML private TableView<UsuarioTable> tblUsuario=new TableView<>();
     @FXML private TableColumn<UsuarioTable, Integer>colDpi=new TableColumn<>();
     @FXML private TableColumn<UsuarioTable, String>colNom=new TableColumn<>();
@@ -33,17 +32,19 @@ public class VentanaUsuarioController implements Initializable {
     @FXML private TextField txtPassword;
     @FXML private TextField txtPassRevisar;
     @FXML private TextField txtDpi;
+    @FXML private TextField txtBuscar;
     @FXML private Button btnModificar;
     @FXML private Button btnCancelarMod;
-    @FXML private AnchorPane ventana;
+    @FXML private Button btnBuscar;
     int [] dpi=new int[100];
     String [] nom=new String[100];
     String [] ape=new String[100];
     String [] user=new String[100];
     String [] pass=new String[100];
     String [] rol=new String[100];
+    String rl;
     private ObservableList<UsuarioTable> usuarios;
-    Funciones funciones=new Funciones();
+    FuncionesUsuario funcionesUsuario =new FuncionesUsuario();
     int cont=0;
 
     @Override
@@ -58,16 +59,16 @@ public class VentanaUsuarioController implements Initializable {
         btnModificar.setDisable(true);
         btnCancelarMod.setDisable(true);
         int tam;
-        tam=funciones.lim();
+        tam= funcionesUsuario.lim();
         System.out.println(tam);
         for (int i=0; i<tam; i++){
 
-            dpi[i]=funciones.mostrarDPI(i);
-            nom[i]=funciones.mostrarNom(i);
-            ape[i]=funciones.mostrarApe(i);
-            user[i]=funciones.mostrarUser(i);
-            pass[i]=funciones.mostrarPass(i);
-            rol[i]=funciones.mostrarRol(i);
+            dpi[i]= funcionesUsuario.mostrarDPI(i);
+            nom[i]= funcionesUsuario.mostrarNom(i);
+            ape[i]= funcionesUsuario.mostrarApe(i);
+            user[i]= funcionesUsuario.mostrarUser(i);
+            pass[i]= funcionesUsuario.mostrarPass(i);
+            rol[i]= funcionesUsuario.mostrarRol(i);
 
             users[i] = new UsuarioTable(user[i],pass[i],nom[i],ape[i],rol[i], dpi[i]);
 
@@ -181,6 +182,8 @@ public class VentanaUsuarioController implements Initializable {
             colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
             tblUsuario.setItems(usuarios);
         }
+
+
     }
     public void setEscenarioPrincipal(Main escenarioPrincipal) {
         this.escenarioPrincipal = escenarioPrincipal;
@@ -203,7 +206,6 @@ public class VentanaUsuarioController implements Initializable {
             aviso.setContentText("Debe de seleccionar un registro.");
             aviso.show();
         }else{
-
             int dpi=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getCui();
             a=String.valueOf(dpi);
             String nom=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getNom();
@@ -212,6 +214,7 @@ public class VentanaUsuarioController implements Initializable {
             String ps=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getPass();
             String ps2=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getPass();
             String rol=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getRl();
+            rl=rol;
             txtDpi.setText(a);
             txtNombre.setText(nom);
             txtNombre.setDisable(false);
@@ -232,6 +235,7 @@ public class VentanaUsuarioController implements Initializable {
         }
 
     }
+
     public void btnModificar(){
 
         if(txtPassword.getText().equals(txtPassRevisar.getText())){
@@ -243,8 +247,10 @@ public class VentanaUsuarioController implements Initializable {
             pass=txtPassword.getText();
             user=txtUsuario.getText();
             rol=cmbRol.getSelectionModel().getSelectedItem();
-
-            funciones.modificarUsuario(dp,nom,ape,user,pass,rol);
+            if(rol==null){
+                rol=rl;
+            }
+            funcionesUsuario.modificarUsuario(dp,nom,ape,user,pass,rol);
             this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
         }else {
             Alert aviso = new Alert(Alert.AlertType.ERROR);
@@ -255,6 +261,7 @@ public class VentanaUsuarioController implements Initializable {
         }
 
     }
+
     public void btnEliminar(){
         if(this.tblUsuario.getSelectionModel().getSelectedItem()== null){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
@@ -271,15 +278,61 @@ public class VentanaUsuarioController implements Initializable {
             Optional<ButtonType> result = aviso.showAndWait();
             if(result.get() == ButtonType.OK){
                 int dpi=usuarios.get(tblUsuario.getSelectionModel().getSelectedIndex()).getCui();
-                funciones.eliminarUsuario(dpi);
+                funcionesUsuario.eliminarUsuario(dpi);
                 this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
             }
 
         }
     }
+
     public void cancelarMod(){
         this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
     }
 
+    public void buscar(){
+        if(txtBuscar.getText().equals("")){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO HAY BUSQUEDAS");
+            aviso.setContentText("Debe de llenar el campo para la busqueda.");
+            aviso.show();
+        }
+
+        int tam, a, r=0;
+        tam= funcionesUsuario.lim();
+        a=Integer.parseInt(txtBuscar.getText());
+        for (int i=0; i<tam;i++){
+            if(a==funcionesUsuario.mostrarDPI(i)){
+                usuarios= FXCollections.observableArrayList(
+                        users[i]
+                );
+                colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+                colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+                colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+                colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+                colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+                colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+                tblUsuario.setItems(usuarios);
+                r=0;
+                i=tam;
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("BUSQUEDA ENCONTRADO");
+                aviso.setContentText("Busqueda exitosa!");
+                aviso.show();
+            }
+            else{
+                r=1;
+            }
+        }
+        if(r==1){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO HAY BUSQUEDAS");
+            aviso.setContentText("No se encontraron resultados.");
+            aviso.show();
+        }
+
+    }
 
 }
