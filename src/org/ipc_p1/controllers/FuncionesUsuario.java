@@ -7,8 +7,6 @@ public class FuncionesUsuario {
     //VARIABLES PRINCIPALES
     public static int limite=100, loginNoFound=0, cont=1, c;
     private static Usuario users[]=new Usuario[100];
-    private static Usuario remplazar[]=new Usuario[100];
-    private static String DatosUsuario[][]=new String[100][100];
 
     //DATOS A MOSTRAR
     public static int[] dpi=new int[100];

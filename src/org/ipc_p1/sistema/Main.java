@@ -75,7 +75,7 @@ public class Main extends Application {
     }
     public void cambiarEscenaVentanaBiblio(){
         try{
-            VentanaBibliotecaController controlador = (VentanaBibliotecaController) this.cambiarEscena("VentanaBibliotecaView.fxml",1569,851);
+            VentanaBibliotecaController controlador = (VentanaBibliotecaController) this.cambiarEscena("VentanaBibliotecaView.fxml",1569,596);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
@@ -84,7 +84,7 @@ public class Main extends Application {
     }
     public void cambiarEscenaCrearIndiviBiblio(){
         try{
-            BiliotecaCrearController controlador = (BiliotecaCrearController) this.cambiarEscena("BibliotecaCrearView.fxml",567,590);
+            BiliotecaCrearController controlador = (BiliotecaCrearController) this.cambiarEscena("BibliotecaCrearView.fxml",567,890);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
