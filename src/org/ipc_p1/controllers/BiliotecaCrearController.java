@@ -15,7 +15,7 @@ public class BiliotecaCrearController implements Initializable {
 
     private Main escenarioPrincipal;
     @FXML private TextField txtAutor;
-    @FXML private TextField txtAño;
+    @FXML private TextField txtAno;
     @FXML private TextField txtTitulo;
     @FXML private TextField txtDesc;
     @FXML private TextField txtPalabra;
@@ -39,7 +39,7 @@ public class BiliotecaCrearController implements Initializable {
         cmbTipo.getItems().add("Libro Virtual");
         txtAutor.setDisable(true);
         txtArea.setDisable(true);
-        txtAño.setDisable(true);
+        txtAno.setDisable(true);
         txtTitulo.setDisable(true);
         txtDesc.setDisable(true);
         txtPalabra.setDisable(true);
@@ -72,7 +72,7 @@ public class BiliotecaCrearController implements Initializable {
         }
         if(tipo.equals("Libro")){
             txtAutor.setDisable(false);
-            txtAño.setDisable(false);
+            txtAno.setDisable(false);
             txtTitulo.setDisable(false);
             txtArea.setDisable(true);
             txtDesc.setDisable(false);
@@ -88,7 +88,7 @@ public class BiliotecaCrearController implements Initializable {
         }
         if(tipo.equals("Revista")){
             txtAutor.setDisable(false);
-            txtAño.setDisable(false);
+            txtAno.setDisable(false);
             txtTitulo.setDisable(false);
             txtCate.setDisable(false);
             txtArea.setDisable(true);
@@ -104,9 +104,9 @@ public class BiliotecaCrearController implements Initializable {
         }
         if(tipo.equals("Tesis")){
             txtAutor.setDisable(false);
-            txtAño.setDisable(false);
+            txtAno.setDisable(false);
             txtTitulo.setDisable(false);
-            txtCate.setDisable(false);
+            txtCate.setDisable(true);
             txtArea.setDisable(false);
             txtDesc.setDisable(false);
             txtPalabra.setDisable(false);
@@ -115,12 +115,12 @@ public class BiliotecaCrearController implements Initializable {
             txtTam.setDisable(true);
             btnCrear.setDisable(false);
             txtEdicion.setDisable(false);
-            txtTema.setDisable(true);
-            txtEjemplar.setDisable(false);
+            txtTema.setDisable(false);
+            txtEjemplar.setDisable(true);
         }
         if(tipo.equals("Libro Virtual")){
             txtAutor.setDisable(false);
-            txtAño.setDisable(false);
+            txtAno.setDisable(false);
             txtTitulo.setDisable(false);
             txtArea.setDisable(true);
             txtDesc.setDisable(false);
@@ -152,7 +152,7 @@ public class BiliotecaCrearController implements Initializable {
         int disp;
         int tam;
         String cate;
-        String ejemplares;
+        int ejemplares;
         String areas;
         int dispo=0;
         if(tipo==null){
@@ -164,7 +164,7 @@ public class BiliotecaCrearController implements Initializable {
         }
         if(tipo.equals("Libro")){
             autor = txtAutor.getText();
-            ano = Integer.valueOf(txtAño.getText());
+            ano = Integer.valueOf(txtAno.getText());
             titulo = txtTitulo.getText();
             desc = txtDesc.getText();
             palabras = txtPalabra.getText();
@@ -173,26 +173,85 @@ public class BiliotecaCrearController implements Initializable {
             edicion = Integer.valueOf(txtEdicion.getText());
             temas = txtTema.getText();
             dispo=copias;
-            if (autor.length()>2 && txtAño.getText().length()>1 && titulo.length()>2 && desc.length()>2 && palabras.length()>2 && txtCopias.getText().length()>1 && txtIsbn.getText().length()>1 && txtEdicion.getText().length()>1 && temas.length()>2){
-                FuncionesLibros.crearLibro(autor,ano,titulo,edicion,isbn,palabras,desc,temas,copias,dispo);
-                this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
-            }else{
+            if (autor.length()==0  || txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtIsbn.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
                 aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
                 aviso.show();
+
+            }else{
+                FuncionesLibros.crearLibro(autor,ano,titulo,edicion,isbn,palabras,desc,temas,copias,dispo);
+                this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }
 
         }
         if(tipo.equals("Revista")){
+            autor=txtAutor.getText();
+            ano=Integer.valueOf(txtAno.getText());
+            titulo=txtTitulo.getText();
+            cate=txtCate.getText();
+            desc=txtDesc.getText();
+            palabras=txtPalabra.getText();
+            copias = Integer.valueOf(txtCopias.getText());
+            edicion = Integer.valueOf(txtEdicion.getText());
+            temas = txtTema.getText();
+            ejemplares=Integer.valueOf(txtEjemplar.getText());
 
+            if (autor.length()==0  || cate.isEmpty()  || txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtEjemplar.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro no guardado!");
+                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.show();
+
+            }else{
+                    FuncionesRevistas.crearRevistas(autor,ano,titulo,edicion,desc,cate,temas,ejemplares,copias,copias,palabras);
+                this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
+            }
         }
         if(tipo.equals("Tesis")){
+            autor=txtAutor.getText();
+            ano=Integer.valueOf(txtAno.getText());
+            titulo=txtTitulo.getText();
+            edicion = Integer.valueOf(txtEdicion.getText());
+            desc=txtDesc.getText();
+            temas=txtTema.getText();
+            areas=txtArea.getText();
+            copias = Integer.valueOf(txtCopias.getText());
+            palabras=txtPalabra.getText();
 
+            if (autor.length()==0 || areas.isEmpty() ||txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro no guardado!");
+                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.show();
+
+            }else{
+                FuncionesTesis.crearTesis(autor,ano,titulo,edicion,desc,temas,areas,copias,copias,palabras);
+                this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
+            }
         }
         if(tipo.equals("Libro Virtual")){
+            autor = txtAutor.getText();
+            ano = Integer.valueOf(txtAno.getText());
+            titulo = txtTitulo.getText();
+            desc = txtDesc.getText();
+            palabras = txtPalabra.getText();
+            temas = txtTema.getText();
+            tam = Integer.valueOf(txtTam.getText());
+            if (autor.length()==0 ||txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || temas.isEmpty() || txtTam.getText().isEmpty()){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro no guardado!");
+                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.show();
 
+            }else{
+                FuncionesLibrosVirtuales.crearLbVirtuales(autor,ano,titulo,palabras,desc,temas,tam);
+                this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
+            }
         }
     }
 

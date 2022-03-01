@@ -127,7 +127,7 @@ public class FuncionesUsuario {
             aviso.show();
         }
         for (int i=1; i<(cont); i++){
-            if(users[i].getDpi()==dp){
+            if(users[i].getDpi()==dp ){
                 users[i]=null;
                 System.out.println(users[i]);
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);

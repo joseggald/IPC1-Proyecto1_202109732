@@ -8,12 +8,12 @@ public class Revistas {
     private String desc;
     private String cate;
     private String temas;
-    private String ejemplares;
+    private int ejemplares;
     private int copias;
     private int disp;
     private String palabras;
 
-    public Revistas(String autor, int año, String titulo, int edicion, String desc, String cate, String temas, String ejemplares, int copias, int disp, String palabras) {
+    public Revistas(String autor, int año, String titulo, int edicion, String desc, String cate, String temas, int ejemplares, int copias, int disp, String palabras) {
         this.autor = autor;
         this.año = año;
         this.titulo = titulo;
@@ -83,11 +83,11 @@ public class Revistas {
         this.temas = temas;
     }
 
-    public String getEjemplares() {
+    public int getEjemplares() {
         return ejemplares;
     }
 
-    public void setEjemplares(String ejemplares) {
+    public void setEjemplares(int ejemplares) {
         this.ejemplares = ejemplares;
     }
 

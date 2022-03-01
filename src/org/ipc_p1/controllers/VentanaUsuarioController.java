@@ -61,6 +61,7 @@ public class VentanaUsuarioController implements Initializable {
         int tam;
         tam= funcionesUsuario.lim();
         System.out.println(tam);
+
         for (int i=0; i<tam; i++){
 
             dpi[i]= funcionesUsuario.mostrarDPI(i);

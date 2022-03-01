@@ -22,5 +22,7 @@ public class VentanaBibliotecaController implements Initializable {
     public void crearIndividual(){
         this.escenarioPrincipal.cambiarEscenaCrearIndiviBiblio();
     }
-
+    public void ventanaLibros(){
+        this.escenarioPrincipal.cambiarEscenaLibros();
+    }
 }

@@ -19,8 +19,8 @@ public class LoginController implements Initializable {
     @FXML private PasswordField txtPassword;
 
     FuncionesUsuario funcionesUsuario =new FuncionesUsuario();
-    @Override
 
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
@@ -43,6 +43,7 @@ public class LoginController implements Initializable {
         if (funcionesUsuario.res.equals("1")){
             this.escenarioPrincipal.cambiarEscenaAdmin();
         }
+
 
     }
 

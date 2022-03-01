@@ -23,7 +23,7 @@ public class Main extends Application {
     public void start(Stage escenarioPrincipal) throws Exception{
         this.escenarioPrincipal=escenarioPrincipal;
         this.escenarioPrincipal.setTitle("IPC1-Proyecto 1");
-        this.cambiarEscenaMain();
+        this.cambiarEscenaCrearIndiviBiblio();
         this.escenarioPrincipal.show();
     }
 
@@ -75,7 +75,7 @@ public class Main extends Application {
     }
     public void cambiarEscenaVentanaBiblio(){
         try{
-            VentanaBibliotecaController controlador = (VentanaBibliotecaController) this.cambiarEscena("VentanaBibliotecaView.fxml",1569,596);
+            VentanaBibliotecaController controlador = (VentanaBibliotecaController) this.cambiarEscena("VentanaBibliotecaView.fxml",706,596);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
@@ -91,7 +91,15 @@ public class Main extends Application {
         }
 
     }
+    public void cambiarEscenaLibros(){
+        try{
+            VentanaLibrosController controlador = (VentanaLibrosController) this.cambiarEscena("VentanaLibrosView.fxml",1403,675);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
+    }
 
     public Initializable cambiarEscena(String escena, int ancho, int alto) throws IOException {
         Initializable resultado = null;
