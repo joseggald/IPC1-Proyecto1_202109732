@@ -24,7 +24,7 @@ public class FuncionesLibros {
     public static String[] temas=new String[100];
     public static int[] copias=new int[100];
     public static int[] disp=new int[100];
-
+    //crear
     public static void crearLibro(String aut, int ano, String titulo, int edicion, int isbn, String palabras, String desc, String temas, int copias, int disp){
             for (int i=0; i<(cont); i++){
                 if(libros[i]==null){
@@ -45,7 +45,39 @@ public class FuncionesLibros {
         c=cont-1;
         return c;
     }
+    //modificar
+    public static void modificarLibro(String aut, int ano, String titulo, int edicion, int isbn, String palabras, String desc, String temas, int copias, int disp){
+        for (int i=0; i<(cont); i++){
+            if(libros[i].getIsbn()==isbn){
+                libros[i]=new Libros(aut,ano,titulo,edicion,isbn,palabras,desc,temas,copias,disp);
+                System.out.println(libros[i].getTitulo());
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro modificado exitosamente!");
+                aviso.setContentText("Puede continuar!");
+                aviso.show();
+                i=cont;
+            }
+        }
+    }
+    //eliminar
+    public static void eliminarLibro(int isbn, String autor, String titulo){
 
+        for (int i=0; i<(cont); i++){
+            if(libros[i].getTitulo().equals(titulo) && libros[i].getAutor().equals(autor) && libros[i].getIsbn()==isbn){
+                libros[i]=null;
+                System.out.println(libros[i]);
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Registro eliminado exitosamente!");
+                aviso.setContentText("Puede continuar!");
+                aviso.show();
+                cont=cont-1;
+                i=cont;
+            }
+        }
+
+    }
     //Traslado de datos a tabla
     public static String mostrarAutor(int o){
         autor[o]=libros[o].getAutor();

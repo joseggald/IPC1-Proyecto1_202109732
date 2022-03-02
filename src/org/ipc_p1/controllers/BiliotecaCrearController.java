@@ -131,7 +131,7 @@ public class BiliotecaCrearController implements Initializable {
             btnCrear.setDisable(false);
             txtEdicion.setDisable(false);
             txtTema.setDisable(false);
-            txtEjemplar.setDisable(false);
+            txtEjemplar.setDisable(true);
         }
 
     }
@@ -241,6 +241,7 @@ public class BiliotecaCrearController implements Initializable {
             palabras = txtPalabra.getText();
             temas = txtTema.getText();
             tam = Integer.valueOf(txtTam.getText());
+            edicion = Integer.valueOf(txtEdicion.getText());
             if (autor.length()==0 ||txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || temas.isEmpty() || txtTam.getText().isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
@@ -249,7 +250,7 @@ public class BiliotecaCrearController implements Initializable {
                 aviso.show();
 
             }else{
-                FuncionesLibrosVirtuales.crearLbVirtuales(autor,ano,titulo,palabras,desc,temas,tam);
+                FuncionesLibrosVirtuales.crearLbVirtuales(autor,ano,titulo,palabras,desc,temas,tam,edicion);
                 this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }
         }

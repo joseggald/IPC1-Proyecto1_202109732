@@ -2,6 +2,7 @@ package org.ipc_p1.models;
 
 public class Tesis {
     private String autor;
+    private String cod;
     private int año;
     private String titulo;
     private int edicion;
@@ -12,8 +13,9 @@ public class Tesis {
     private int disp;
     private String palabras;
 
-    public Tesis(String autor, int año, String titulo, int edicion, String desc, String temas, String areas, int copias, int disp, String palabras) {
+    public Tesis(String cod,String autor, int año, String titulo, int edicion, String desc, String temas, String areas, int copias, int disp, String palabras) {
         this.autor = autor;
+        this.cod = cod;
         this.año = año;
         this.titulo = titulo;
         this.edicion = edicion;
@@ -23,6 +25,14 @@ public class Tesis {
         this.copias = copias;
         this.disp = disp;
         this.palabras = palabras;
+    }
+
+    public String getCod() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod = cod;
     }
 
     public String getAutor() {

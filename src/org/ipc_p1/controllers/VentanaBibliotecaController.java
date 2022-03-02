@@ -25,4 +25,13 @@ public class VentanaBibliotecaController implements Initializable {
     public void ventanaLibros(){
         this.escenarioPrincipal.cambiarEscenaLibros();
     }
+    public void ventanaLibrosVirtuales(){
+        this.escenarioPrincipal.cambiarEscenaLibrosVirtuales();
+    }
+    public void ventanaRevista(){
+        this.escenarioPrincipal.cambiarEscenaRevistas();
+    }
+    public void ventanaTesis(){
+        this.escenarioPrincipal.cambiarEscenaTesis();
+    }
 }

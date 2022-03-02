@@ -7,21 +7,48 @@ import javafx.beans.property.StringProperty;
 
 public class LibrosVirtualesTable {
     private final StringProperty autor;
+    private final StringProperty cod;
     private final IntegerProperty año;
     private final StringProperty  titulo;
     private final StringProperty  palabras;
     private final StringProperty  desc;
     private final StringProperty temas;
     private final IntegerProperty tam;
-
-    public LibrosVirtualesTable(String autor, int año, String titulo, String palabras, String desc, String temas, int tam) {
+    private final IntegerProperty edicion;
+    public LibrosVirtualesTable(String cod,String autor, int año, String titulo, String palabras, String desc, String temas, int tam, int edicion) {
         this.autor = new SimpleStringProperty(autor);
+        this.cod = new SimpleStringProperty(cod);
         this.año = new SimpleIntegerProperty(año);
         this.titulo = new SimpleStringProperty(titulo);
         this.palabras = new SimpleStringProperty(palabras);
         this.desc = new SimpleStringProperty(desc);
         this.temas = new SimpleStringProperty(temas);
         this.tam = new SimpleIntegerProperty(tam);
+        this.edicion = new SimpleIntegerProperty(edicion);
+    }
+
+    public int getEdicion() {
+        return edicion.get();
+    }
+
+    public IntegerProperty edicionProperty() {
+        return edicion;
+    }
+
+    public void setEdicion(int edicion) {
+        this.edicion.set(edicion);
+    }
+
+    public String getCod() {
+        return cod.get();
+    }
+
+    public StringProperty codProperty() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod.set(cod);
     }
 
     public String getAutor() {

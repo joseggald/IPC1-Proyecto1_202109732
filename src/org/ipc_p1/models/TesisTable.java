@@ -7,6 +7,7 @@ import javafx.beans.property.StringProperty;
 
 public class TesisTable {
     private final StringProperty autor;
+    private final StringProperty cod;
     private final IntegerProperty año;
     private final StringProperty titulo;
     private final IntegerProperty edicion;
@@ -17,7 +18,8 @@ public class TesisTable {
     private final IntegerProperty disp;
     private final StringProperty palabras;
 
-    public TesisTable(String autor, int año, String titulo, int edicion, String desc, String temas, String areas, int copias, int disp, String palabras) {
+    public TesisTable(String cod ,String autor, int año, String titulo, int edicion, String desc, String temas, String areas, int copias, int disp, String palabras) {
+        this.cod= new SimpleStringProperty(cod);
         this.autor = new SimpleStringProperty(autor);
         this.año = new SimpleIntegerProperty(año);
         this.titulo = new SimpleStringProperty(titulo);
@@ -28,6 +30,18 @@ public class TesisTable {
         this.copias = new SimpleIntegerProperty(copias);
         this.disp = new SimpleIntegerProperty(disp);
         this.palabras = new SimpleStringProperty(palabras);
+    }
+
+    public String getCod() {
+        return cod.get();
+    }
+
+    public StringProperty codProperty() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod.set(cod);
     }
 
     public String getAutor() {

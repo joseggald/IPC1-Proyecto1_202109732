@@ -2,6 +2,8 @@ package org.ipc_p1.controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -11,6 +13,8 @@ import org.ipc_p1.models.UsuarioTable;
 import org.ipc_p1.sistema.Main;
 
 import java.net.URL;
+import java.util.Locale;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class VentanaLibrosController implements Initializable {
@@ -35,6 +39,7 @@ public class VentanaLibrosController implements Initializable {
     @FXML private TextField txtIsbn;
     @FXML private TextField txtEdicion;
     @FXML private TextField txtTema;
+    @FXML private TextField txtBuscar;
     @FXML private Button btnModificar;
     @FXML private Button btnCancelarMod;
     String[] autor=new String[100];
@@ -198,6 +203,55 @@ public class VentanaLibrosController implements Initializable {
                 colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
                 tblLibro.setItems(librosTable);
             }
+            FilteredList<LibrosTable> filtro= new FilteredList<>(librosTable, b -> true);
+
+            txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{
+                filtro.setPredicate(librosTableSearch -> {
+                    if(newValue.isEmpty() || newValue == null){
+                        return true;
+                    }
+                    String cop =String.valueOf(librosTableSearch.getCopias());
+                    String ano =String.valueOf(librosTableSearch.getAño());
+                    String edi =String.valueOf(librosTableSearch.getEdicion());
+                    String isbn =String.valueOf(librosTableSearch.getIsbn());
+                    String buscarTxt = newValue.toLowerCase();
+
+                    if(librosTableSearch.getAutor().toLowerCase().indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(librosTableSearch.getDesc().toLowerCase().indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(librosTableSearch.getTitulo().toLowerCase().indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(librosTableSearch.getTemas().toLowerCase().indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(librosTableSearch.getPalabras().toLowerCase().indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(cop.indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(isbn.indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(edi.indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else if(ano.indexOf(buscarTxt)>-1){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                });
+            });
+            SortedList<LibrosTable> busqueda = new SortedList<>(filtro);
+
+            busqueda.comparatorProperty().bind(tblLibro.comparatorProperty());
+            tblLibro.setItems(busqueda);
         }else{
             System.out.println("x");
         }
@@ -224,13 +278,13 @@ public class VentanaLibrosController implements Initializable {
             int ano=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getAño();
             anoStr=String.valueOf(ano);
             int edicion=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getEdicion();
-            ediStr=String.valueOf(ano);
+            ediStr=String.valueOf(edicion);
             int isbn=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getIsbn();
-            isbnStr=String.valueOf(ano);
+            isbnStr=String.valueOf(isbn);
             int copias=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getCopias();
-            copiasStr=String.valueOf(ano);
+            copiasStr=String.valueOf(copias);
             int disp=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getDisp();
-            dispStr=String.valueOf(ano);
+            dispStr=String.valueOf(disp);
 
             String autor=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getAutor();
             String titulo=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getTitulo();
@@ -256,7 +310,7 @@ public class VentanaLibrosController implements Initializable {
             txtCopias.setDisable(false);
             txtCopias.setText(copiasStr);
 
-            txtIsbn.setDisable(false);
+            txtIsbn.setDisable(true);
             txtIsbn.setText(isbnStr);
 
             txtEdicion.setDisable(false);
@@ -268,8 +322,62 @@ public class VentanaLibrosController implements Initializable {
             btnModificar.setDisable(false);
             btnCancelarMod.setDisable(false);
 
-
         }
 
+    }
+    public void btnModificar(){
+        int ano,copias,isbn,edicion;
+        String autor,titulo,desc,palabra,tema;
+        autor=txtAutor.getText();
+        ano=Integer.parseInt(txtAno.getText());
+        titulo=txtTitulo.getText();
+        desc=txtDesc.getText();
+        palabra=txtPalabra.getText();
+        copias =Integer.parseInt(txtCopias.getText());
+        isbn=Integer.parseInt(txtIsbn.getText());
+
+        edicion=Integer.parseInt(txtEdicion.getText());
+        tema=txtTema.getText();
+
+
+        if(autor.isEmpty() && titulo.isEmpty()){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO MODIFICADO");
+            aviso.setContentText("Debe de llenar todos los campos.");
+            aviso.show();
+
+        }else {
+            FuncionesLibros.modificarLibro(autor,ano,titulo,edicion,isbn,palabra,desc,tema,copias,copias);
+            this.escenarioPrincipal.cambiarEscenaLibros();
+        }
+
+    }
+    public void cancelarMod(){
+        this.escenarioPrincipal.cambiarEscenaLibros();
+    }
+    public void btnEliminar(){
+        if(this.tblLibro.getSelectionModel().getSelectedItem()== null){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("NO SELECCIONADO");
+            aviso.setContentText("Debe de seleccionar un registro.");
+            aviso.show();
+        }
+        else{
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Eliminar Libro.");
+            aviso.setContentText("Esta seguro de eliminar?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                int isbn=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getIsbn();
+                String autor=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getAutor();
+                String titulo=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getTitulo();
+                FuncionesLibros.eliminarLibro(isbn,autor,titulo);
+                this.escenarioPrincipal.cambiarEscenaLibros();
+            }
+
+        }
     }
 }

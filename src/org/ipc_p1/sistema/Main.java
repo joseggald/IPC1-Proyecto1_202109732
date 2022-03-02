@@ -100,7 +100,33 @@ public class Main extends Application {
         }
 
     }
+    public void cambiarEscenaLibrosVirtuales(){
+        try{
+            VentanaLibVirtualesController controlador = (VentanaLibVirtualesController) this.cambiarEscena("VentanaLibVirtualView.fxml",1403,675);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
+    }
+    public void cambiarEscenaRevistas(){
+        try{
+            VentanaRevistasController controlador = (VentanaRevistasController) this.cambiarEscena("VentanaRevistaView.fxml",1492,675);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaTesis(){
+        try{
+            VentanaTesisController controlador = (VentanaTesisController) this.cambiarEscena("VentanaTesisView.fxml",1403,675);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
     public Initializable cambiarEscena(String escena, int ancho, int alto) throws IOException {
         Initializable resultado = null;
         FXMLLoader cargadorFXML = new FXMLLoader(getClass().getResource(this.CarpetaViews + escena));

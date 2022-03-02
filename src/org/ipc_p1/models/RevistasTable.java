@@ -7,18 +7,19 @@ import javafx.beans.property.StringProperty;
 
 public class RevistasTable {
     private final StringProperty autor;
+    private final StringProperty cod;
     private final IntegerProperty año;
     private final StringProperty titulo;
     private final IntegerProperty edicion;
     private final StringProperty desc;
     private final StringProperty cate;
     private final StringProperty temas;
-    private final StringProperty ejemplares;
+    private final IntegerProperty ejemplares;
     private final IntegerProperty copias;
     private final IntegerProperty disp;
     private final StringProperty palabras;
 
-    public RevistasTable(String autor, int año, String titulo, int edicion, String desc, String cate, String temas, String ejemplares, int copias, int disp, String palabras) {
+    public RevistasTable(String cod,String autor, int año, String titulo, int edicion, String desc, String cate, String temas, int ejemplares, int copias, int disp, String palabras) {
         this.autor = new SimpleStringProperty(autor);
         this.año = new SimpleIntegerProperty(año);
         this.titulo = new SimpleStringProperty(titulo);
@@ -26,10 +27,23 @@ public class RevistasTable {
         this.desc = new SimpleStringProperty(desc);
         this.cate = new SimpleStringProperty(cate);
         this.temas = new SimpleStringProperty(temas);
-        this.ejemplares = new SimpleStringProperty(ejemplares);
+        this.ejemplares = new SimpleIntegerProperty(ejemplares);
         this.copias = new SimpleIntegerProperty(copias);
         this.disp = new SimpleIntegerProperty(disp);
         this.palabras = new SimpleStringProperty(palabras);
+        this.cod = new SimpleStringProperty(cod);
+    }
+
+    public String getCod() {
+        return cod.get();
+    }
+
+    public StringProperty codProperty() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod.set(cod);
     }
 
     public String getAutor() {
@@ -116,15 +130,15 @@ public class RevistasTable {
         this.temas.set(temas);
     }
 
-    public String getEjemplares() {
+    public int getEjemplares() {
         return ejemplares.get();
     }
 
-    public StringProperty ejemplaresProperty() {
+    public IntegerProperty ejemplaresProperty() {
         return ejemplares;
     }
 
-    public void setEjemplares(String ejemplares) {
+    public void setEjemplares(int ejemplares) {
         this.ejemplares.set(ejemplares);
     }
 

@@ -2,22 +2,41 @@ package org.ipc_p1.models;
 
 public class LibrosVirtuales {
     private String autor;
+    private String cod;
     private int año;
     private String titulo;
     private String palabras;
     private String desc;
     private String temas;
     private int tam;
-
-    public LibrosVirtuales(String autor, int año, String titulo, String palabras, String desc, String temas, int tam) {
+    private int edicion;
+    public LibrosVirtuales(String cod,String autor, int año, String titulo, String palabras, String desc, String temas, int tam, int edicion) {
         this.autor = autor;
+        this.cod = cod;
         this.año = año;
         this.titulo = titulo;
         this.palabras = palabras;
         this.desc = desc;
         this.temas = temas;
         this.tam = tam;
+        this.edicion = edicion;
 
+    }
+
+    public int getEdicion() {
+        return edicion;
+    }
+
+    public void setEdicion(int edicion) {
+        this.edicion = edicion;
+    }
+
+    public String getCod() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod = cod;
     }
 
     public String getAutor() {

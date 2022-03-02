@@ -12,8 +12,9 @@ public class Revistas {
     private int copias;
     private int disp;
     private String palabras;
+    private String codigo;
 
-    public Revistas(String autor, int año, String titulo, int edicion, String desc, String cate, String temas, int ejemplares, int copias, int disp, String palabras) {
+    public Revistas(String codigo,String autor, int año, String titulo, int edicion, String desc, String cate, String temas, int ejemplares, int copias, int disp, String palabras) {
         this.autor = autor;
         this.año = año;
         this.titulo = titulo;
@@ -25,6 +26,15 @@ public class Revistas {
         this.copias = copias;
         this.disp = disp;
         this.palabras = palabras;
+        this.codigo=codigo;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getAutor() {
