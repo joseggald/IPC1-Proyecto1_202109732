@@ -5,7 +5,7 @@ import org.ipc_p1.models.*;
 
 public class FuncionesLibros {
 
-    public static int cont=1, c;
+    public static int cont=3, c;
 
     //VARIABLES PRINCIPALES
     private static Libros libros[]=new Libros[100];
@@ -42,6 +42,8 @@ public class FuncionesLibros {
             }
     }
     public static int lim(){
+        libros[0]=new Libros("Mario",2021,"Matematicas I",14,23354,"Sumas,restas y funciones.","Matematica de principiantes","Ciencia Y matematica",20,20);
+        libros[1]=new Libros("Josue",2001,"Estructuras",10,23432,"Construccion y Modelado.","Induccion para construccion.","Arquitectura e ingenieria.",25,25);
         c=cont-1;
         return c;
     }
@@ -66,6 +68,8 @@ public class FuncionesLibros {
         for (int i=0; i<(cont); i++){
             if(libros[i].getTitulo().equals(titulo) && libros[i].getAutor().equals(autor) && libros[i].getIsbn()==isbn){
                 libros[i]=null;
+                libros[i]=libros[cont-1];
+                libros[cont-1]=null;
                 System.out.println(libros[i]);
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");

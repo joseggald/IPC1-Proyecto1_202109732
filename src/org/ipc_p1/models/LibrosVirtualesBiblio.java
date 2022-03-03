@@ -6,7 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.control.Button;
 
-public class LibrosVirtualesTable {
+public class LibrosVirtualesBiblio {
     private final StringProperty autor;
     private final StringProperty cod;
     private final IntegerProperty año;
@@ -16,8 +16,8 @@ public class LibrosVirtualesTable {
     private final StringProperty temas;
     private final IntegerProperty tam;
     private final IntegerProperty edicion;
-
-    public LibrosVirtualesTable(String cod,String autor, int año, String titulo, String palabras, String desc, String temas, int tam, int edicion) {
+    private Button btnAgregar;
+    public LibrosVirtualesBiblio(String cod,String autor, int año, String titulo, String palabras, String desc, String temas, int tam, int edicion, Button btnAgregar) {
         this.autor = new SimpleStringProperty(autor);
         this.cod = new SimpleStringProperty(cod);
         this.año = new SimpleIntegerProperty(año);
@@ -27,10 +27,17 @@ public class LibrosVirtualesTable {
         this.temas = new SimpleStringProperty(temas);
         this.tam = new SimpleIntegerProperty(tam);
         this.edicion = new SimpleIntegerProperty(edicion);
-
+        this.btnAgregar=btnAgregar;
+        this.btnAgregar.setText("Agregar");
     }
 
+    public Button getBtnAgregar() {
+        return btnAgregar;
+    }
 
+    public void setBtnAgregar(Button btnAgregar) {
+        this.btnAgregar = btnAgregar;
+    }
 
     public int getEdicion() {
         return edicion.get();

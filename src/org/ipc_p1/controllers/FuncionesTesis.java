@@ -6,7 +6,7 @@ import org.ipc_p1.models.Tesis;
 
 public class FuncionesTesis {
     private static Tesis tesis[]=new Tesis[100];
-    public static int cont=1,c;
+    public static int cont=3,c;
 
     public static String[] autor=new String[100];
     public static int[] ano=new int[100];
@@ -38,6 +38,8 @@ public class FuncionesTesis {
         }
     }
     public static int lim(){
+        tesis[0]=new Tesis("1","Mario",2021,"Matematicas I",14,"xxxx","Sumas,restas y funciones.","Matematica de principiantes",12,20,"NONO SISIS AAAY");
+        tesis[1]=new Tesis("2","Jake",2001,"Matematicas I",14,"xxxx","Sumas,restas y funciones.","Matematica de principiantes",12,20,"NONO SISIS AAAY");
         c=cont-1;
         return c;
     }
@@ -61,6 +63,8 @@ public class FuncionesTesis {
         for (int i=0; i<(cont); i++){
             if(tesis[i].getCod().equals(cod)){
                 tesis[i]=null;
+                tesis[i]=tesis[cont-1];
+                tesis[cont-1]=null;
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro eliminado exitosamente!");

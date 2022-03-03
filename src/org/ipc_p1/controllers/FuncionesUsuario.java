@@ -5,9 +5,9 @@ import org.ipc_p1.models.Usuario;
 
 public class FuncionesUsuario {
     //VARIABLES PRINCIPALES
-    public static int limite=100, loginNoFound=0, cont=1, c;
+    public static int limite=100, loginNoFound=0, cont=2, c, actual;
     private static Usuario users[]=new Usuario[100];
-
+    public static String rl;
     //DATOS A MOSTRAR
     public static int[] dpi=new int[100];
     public static String[] nom=new String[100];
@@ -29,17 +29,18 @@ public class FuncionesUsuario {
         usern[0]=user.getUsername();
         pass[0]=user.getPassword();
         rol[0]=user.getRol();
-
+        users[1]=new Usuario(202001543,"alum","1234","Eduardo","Gonzalez","Usuario");
         for (int i=0; i<cont; i++){
             if(username.equals(users[i].getUsername()) && password.equals(users[i].getPassword()) && username.length()>2 && password.length()>2){
-
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Login");
                 aviso.setContentText("Bienvenido de nuevo "+users[i].getNombre()+ " "+ users[i].getApellido()+"!");
                 aviso.show();
+                rl=users[i].getRol();
                 res="1";
                 loginNoFound=0;
+                actual=i;
                 i=limite;
             }else{
                 loginNoFound=1;
@@ -55,11 +56,11 @@ public class FuncionesUsuario {
         }
     }
 
+
     //CREAR USUARIO
     public static void crearUsuario(int dp, String nombre, String apellido, String usuario, String password, String rol){
         int r=1;
         for (int i=0; i<cont; i++){
-
             if(users[i].getDpi()==dp){
                 r=1;
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
@@ -129,7 +130,9 @@ public class FuncionesUsuario {
         for (int i=1; i<(cont); i++){
             if(users[i].getDpi()==dp ){
                 users[i]=null;
-                System.out.println(users[i]);
+                users[i]=users[cont-1];
+                users[cont-1]=null;
+                System.out.println(users[i].getUsername());
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro eliminado exitosamente!");

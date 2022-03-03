@@ -23,7 +23,7 @@ public class Main extends Application {
     public void start(Stage escenarioPrincipal) throws Exception{
         this.escenarioPrincipal=escenarioPrincipal;
         this.escenarioPrincipal.setTitle("IPC1-Proyecto 1");
-        this.cambiarEscenaCrearIndiviBiblio();
+        this.cambiarEscenaMain();
         this.escenarioPrincipal.show();
     }
 
@@ -48,6 +48,15 @@ public class Main extends Application {
     public void cambiarEscenaAdmin(){
         try{
             AdminController controlador = (AdminController) this.cambiarEscena("AdminView.fxml",571,231);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaEstu(){
+        try{
+            EstudianteController controlador = (EstudianteController) this.cambiarEscena("EstudianteView.fxml",571,484);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();
@@ -121,6 +130,24 @@ public class Main extends Application {
     public void cambiarEscenaTesis(){
         try{
             VentanaTesisController controlador = (VentanaTesisController) this.cambiarEscena("VentanaTesisView.fxml",1403,675);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaBiblioVirt(){
+        try{
+           BibliotecaVirtualController controlador = (BibliotecaVirtualController) this.cambiarEscena("VentanaBibliotecaUserView.fxml",1136,627);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaVerMiBiblioVirt(){
+        try{
+            BiblioLibVirtualesController controlador = (BiblioLibVirtualesController) this.cambiarEscena("BiblioLibVirtualView.fxml",996,675);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();

@@ -12,6 +12,7 @@ import org.ipc_p1.models.LibrosTable;
 import org.ipc_p1.models.LibrosVirtualesTable;
 import org.ipc_p1.sistema.Main;
 
+import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -49,7 +50,10 @@ public class VentanaLibVirtualesController implements Initializable {
     String[] desc=new String[100];
     String[] temas=new String[100];
     String[] cod=new String[100];
+
     private ObservableList<LibrosVirtualesTable> librosTable;
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         int limite, cont=0;
@@ -195,12 +199,15 @@ public class VentanaLibVirtualesController implements Initializable {
             System.out.println("x");
         }
     }
+
+
     public void setEscenarioPrincipal(Main escenarioPrincipal) {
         this.escenarioPrincipal = escenarioPrincipal;
     }
     public void ventanaMain(){
         this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
     }
+
     public void modificarUsuario(){
         String anoStr, ediStr, tamStr;
         if(this.tblLibro.getSelectionModel().getSelectedItem() == null){

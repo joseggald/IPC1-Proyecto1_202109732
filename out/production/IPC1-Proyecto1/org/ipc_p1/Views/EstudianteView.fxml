@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.EstudianteController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="213.0" layoutX="131.0" layoutY="257.0" stroke="#1d4a6f" strokeType="INSIDE" width="309.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="108.0" layoutX="-4.0" layoutY="69.0" stroke="#1d4a6f" strokeType="INSIDE" width="485.0" />
+      <ImageView fitHeight="77.0" fitWidth="80.0" layoutX="14.0" layoutY="85.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../resources/images/3.png" />
+         </image>
+      </ImageView>
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="102.0" prefHeight="43.0" prefWidth="398.0" text="Sistema de Biblioteca USAC" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="-4.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="577.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opciones de Estudiante">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaBiblioVirt" text="Biblioteca Virtual" />
+                  <MenuItem mnemonicParsing="false" text="Prestamos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Cuenta">
+               <items>
+                  <MenuItem fx:id="btnLogOut" mnemonicParsing="false" onAction="#ventanaMain" text="Cerrar Sesión" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtUsuario" layoutX="231.0" layoutY="327.0" />
+      <Label layoutX="160.0" layoutY="330.0" text="Usuario:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDpi" layoutX="231.0" layoutY="284.0" />
+      <Label layoutX="184.0" layoutY="287.0" text="DPI:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="371.0" text="Nombre:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="412.0" text="Apellido:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="231.0" layoutY="368.0" />
+      <TextField fx:id="txtApellido" layoutX="231.0" layoutY="409.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="-5.0" layoutY="192.0" stroke="#1d4a6f" strokeType="INSIDE" width="577.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="122.0" layoutY="196.0" prefHeight="43.0" prefWidth="323.0" text="Bienvenido Estudiante!" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

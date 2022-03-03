@@ -7,7 +7,7 @@ import org.ipc_p1.models.Revistas;
 public class FuncionesRevistas {
     private static Revistas revistas[]=new Revistas[100];
 
-    public static int cont=1,c;
+    public static int cont=3,c;
 
     public static String[] cod=new String[100];
     public static String[] autor=new String[100];
@@ -41,6 +41,8 @@ public class FuncionesRevistas {
         }
     }
     public static int lim(){
+        revistas[0]=new Revistas("1","Mario",2021,"Matematicas I",14,"xxxx","Sumas,restas y funciones.","Matematica de principiantes",12,20,20,"NONO SISIS AAAY");
+        revistas[1]=new Revistas("2","Norman",2003,"Ingles II",23,"AAAA","Sumas,restas y funciones.","Matematica de principiantes",23,144,144,"NONO SISIS AAAY");
         c=cont-1;
         return c;
     }
@@ -64,6 +66,8 @@ public class FuncionesRevistas {
         for (int i=0; i<(cont); i++){
             if(revistas[i].getCodigo().equals(cod)){
                 revistas[i]=null;
+                revistas[i]=revistas[cont-1];
+                revistas[cont-1]=null;
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro eliminado exitosamente!");

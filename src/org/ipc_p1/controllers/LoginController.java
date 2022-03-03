@@ -40,9 +40,16 @@ public class LoginController implements Initializable {
 
         funcionesUsuario.login(us, ps);
 
-        if (funcionesUsuario.res.equals("1")){
+        if (funcionesUsuario.rl.equals("Administrador") && funcionesUsuario.res.equals("1")){
             this.escenarioPrincipal.cambiarEscenaAdmin();
         }
+        else if(funcionesUsuario.rl.equals("Usuario") && funcionesUsuario.res.equals("1")){
+            this.escenarioPrincipal.cambiarEscenaEstu();
+        }
+        else {
+            this.escenarioPrincipal.cambiarEscenaLogin();
+        }
+
 
 
     }
