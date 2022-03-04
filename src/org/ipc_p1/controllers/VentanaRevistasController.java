@@ -140,6 +140,39 @@ public class VentanaRevistasController implements Initializable {
                 colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
                 colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
                 tblLibro.setItems(revistaTable);
+            }
+            if(cont==4){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }if(cont==4){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
             }else{
                 System.out.println("x");
             }

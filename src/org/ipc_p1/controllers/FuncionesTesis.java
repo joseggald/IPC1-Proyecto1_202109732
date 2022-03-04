@@ -6,7 +6,9 @@ import org.ipc_p1.models.Tesis;
 
 public class FuncionesTesis {
     private static Tesis tesis[]=new Tesis[100];
-    public static int cont=3,c;
+    private static Tesis bibliotecaUser[][]=new Tesis[100][100];
+    public static int cont=1,c,res,lim;
+    public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
     public static String[] autor=new String[100];
     public static int[] ano=new int[100];
@@ -38,8 +40,6 @@ public class FuncionesTesis {
         }
     }
     public static int lim(){
-        tesis[0]=new Tesis("1","Mario",2021,"Matematicas I",14,"xxxx","Sumas,restas y funciones.","Matematica de principiantes",12,20,"NONO SISIS AAAY");
-        tesis[1]=new Tesis("2","Jake",2001,"Matematicas I",14,"xxxx","Sumas,restas y funciones.","Matematica de principiantes",12,20,"NONO SISIS AAAY");
         c=cont-1;
         return c;
     }
@@ -120,6 +120,139 @@ public class FuncionesTesis {
     public static int mostrarDisp(int o){
         disp[o]=tesis[o].getDisp();
         return disp[o];
+    }
+    //prestar
+    public static void agregar(String cod, int pos){
+        int li=col[pos]-1;
+        if(li==0){
+            res=1;
+        }
+        if (li>0){
+            for(int k=0; k<li; k++){
+
+                if(bibliotecaUser[pos][k].getCod().equals(cod)){
+                    res=2;
+                    k=li;
+                }else{
+                    res=1;
+                }
+            }
+
+        }
+        if(res==1){
+            for (int i=0; i<(cont); i++){
+                if(tesis[i].getCod().equals(cod)){
+                    for(int j=0; j<(col[pos]); j++){
+                        if(bibliotecaUser[pos][j]==null){
+
+                            if(tesis[i].getDisp()<1){
+                                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                                aviso.setHeaderText("Ya no hay copias disponibles!");
+                                aviso.setContentText("Elija otra tesis!");
+                                aviso.show();
+                                res=3;
+                                j=col[pos];
+                                i=cont;
+                            }else if(tesis[i].getDisp()>0){
+                                tesis[i].setDisp(tesis[i].getDisp()-1);
+                                bibliotecaUser[pos][j]=tesis[i];
+                                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                                aviso.setHeaderText("Fue agregado exitosamente a su biblioteca de prestamos de tesis!");
+                                aviso.setContentText("Puede continuar!");
+                                aviso.show();
+                                col[pos]=col[pos]+1;
+                                j=col[pos];
+                                i=cont;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    //eliminar biblio
+    public static void eliminarBiblio(String cod, int pos){
+        for (int i=0; i<(col[pos]-1); i++){
+            if(bibliotecaUser[pos][i].getCod().equals(cod)){
+                bibliotecaUser[pos][i]=null;
+                bibliotecaUser[pos][i]=bibliotecaUser[pos][col[pos]-1];
+                bibliotecaUser[pos][col[pos]-1]=null;
+                tesis[i].setDisp(tesis[i].getDisp()+1);
+                col[pos]=col[pos]-1;
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Fue devuelta exitosamente la tesis!");
+                aviso.setContentText("Puede continuar!");
+                aviso.show();
+            }
+        }
+
+    }
+    //Seteado
+    public static String autorUser(int pos,int j){
+        String autor;
+        autor=bibliotecaUser[pos][j].getAutor();
+        return autor;
+    }
+    public static int anoUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getAño();
+        return a;
+    }
+    public static String codUser(int pos,int j){
+        String a;
+        a= bibliotecaUser[pos][j].getCod();
+        return a;
+    }
+    public static String tituloUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getTitulo();
+        return a;
+    }
+    public static String palabrasUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getPalabras();
+        return a;
+    }
+    public static String descUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getDesc();
+        return a;
+    }
+    public static String temasUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getTemas();
+        return a;
+    }
+    public static String areaUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getAreas();
+        return a;
+    }
+    public static int copiasUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getCopias();
+        return a;
+    }
+
+    public static int edicionUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getEdicion();
+        return a;
+    }
+    public static int dispUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getDisp();
+        return a;
+    }
+    //limite user
+    public static int limite(int o){
+        int a;
+        a=col[o]-1;
+        return a;
     }
 
 }

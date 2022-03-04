@@ -30,7 +30,7 @@
           <Menu mnemonicParsing="false" text="Opciones de Estudiante">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#ventanaBiblioVirt" text="Biblioteca Virtual" />
-                  <MenuItem mnemonicParsing="false" text="Prestamos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaPrestamos" text="Prestamos" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Cuenta">

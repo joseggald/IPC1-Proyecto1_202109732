@@ -5,11 +5,12 @@ import org.ipc_p1.models.*;
 
 public class FuncionesLibros {
 
-    public static int cont=3, c;
+    public static int cont=1, c,res,lim;
+    public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
     //VARIABLES PRINCIPALES
     private static Libros libros[]=new Libros[100];
-
+    private static Libros bibliotecaUser[][]=new Libros[100][100];
 
 
 
@@ -29,7 +30,6 @@ public class FuncionesLibros {
             for (int i=0; i<(cont); i++){
                 if(libros[i]==null){
                     libros[i]=new Libros(aut,ano,titulo,edicion,isbn,palabras,desc,temas,copias,disp);
-
                     Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                     aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                     aviso.setHeaderText("Registro guardado exitosamente!");
@@ -42,8 +42,6 @@ public class FuncionesLibros {
             }
     }
     public static int lim(){
-        libros[0]=new Libros("Mario",2021,"Matematicas I",14,23354,"Sumas,restas y funciones.","Matematica de principiantes","Ciencia Y matematica",20,20);
-        libros[1]=new Libros("Josue",2001,"Estructuras",10,23432,"Construccion y Modelado.","Induccion para construccion.","Arquitectura e ingenieria.",25,25);
         c=cont-1;
         return c;
     }
@@ -64,7 +62,6 @@ public class FuncionesLibros {
     }
     //eliminar
     public static void eliminarLibro(int isbn, String autor, String titulo){
-
         for (int i=0; i<(cont); i++){
             if(libros[i].getTitulo().equals(titulo) && libros[i].getAutor().equals(autor) && libros[i].getIsbn()==isbn){
                 libros[i]=null;
@@ -78,6 +75,57 @@ public class FuncionesLibros {
                 aviso.show();
                 cont=cont-1;
                 i=cont;
+            }
+        }
+
+    }
+    //prestar
+    public static void agregar(int cod, int pos){
+        int li=col[pos]-1;
+        if(li==0){
+            res=1;
+        }
+        if (li>0){
+            for(int k=0; k<li; k++){
+
+                if(bibliotecaUser[pos][k].getIsbn()==cod){
+                    res=2;
+                    k=li;
+                }else{
+                    res=1;
+                }
+            }
+
+        }
+        if(res==1){
+            for (int i=0; i<(cont); i++){
+                if(libros[i].getIsbn()==cod){
+                    for(int j=0; j<(col[pos]); j++){
+                        if(bibliotecaUser[pos][j]==null){
+                            if(libros[i].getDisp()<1){
+                                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                                aviso.setHeaderText("Ya no hay copias disponibles!");
+                                aviso.setContentText("Elija otro libro!");
+                                aviso.show();
+                                res=3;
+                                j=col[pos];
+                                i=cont;
+                            }else if(libros[i].getDisp()>0){
+                                libros[i].setDisp(libros[i].getDisp()-1);
+                            bibliotecaUser[pos][j]=libros[i];
+                            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                            aviso.setHeaderText("Fue agregado exitosamente a su biblioteca de prestamos de libros!");
+                            aviso.setContentText("Puede continuar!");
+                            aviso.show();
+                            col[pos]=col[pos]+1;
+                            j=col[pos];
+                            i=cont;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -123,4 +171,79 @@ public class FuncionesLibros {
         disp[o]=libros[o].getDisp();
         return disp[o];
     }
+    //Prestamos
+    public static int limite(int o){
+        int a;
+        a=col[o]-1;
+        return a;
+    }
+    public static void eliminarBiblio(int cod, int pos){
+        for (int i=0; i<(col[pos]-1); i++){
+            if(bibliotecaUser[pos][i].getIsbn()==cod){
+                bibliotecaUser[pos][i]=null;
+                bibliotecaUser[pos][i]=bibliotecaUser[pos][col[pos]-1];
+                bibliotecaUser[pos][col[pos]-1]=null;
+                libros[i].setDisp(libros[i].getDisp()+1);
+                col[pos]=col[pos]-1;
+                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Fue devuelto exitosamente el libro!");
+                aviso.setContentText("Puede continuar!");
+                aviso.show();
+            }
+        }
+
+    }
+    //Seteado de valores
+    public static String autorUser(int pos,int j){
+        String autor;
+        autor=bibliotecaUser[pos][j].getAutor();
+        return autor;
+    }
+    public static int anoUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getAno();
+        return a;
+    }
+    public static int isbnUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getIsbn();
+        return a;
+    }
+    public static String tituloUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getTitulo();
+        return a;
+    }
+    public static String palabrasUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getPalabras();
+        return a;
+    }
+    public static String descUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getDesc();
+        return a;
+    }
+    public static String temasUser(int pos,int j){
+        String a;
+        a=bibliotecaUser[pos][j].getTemas();
+        return a;
+    }
+    public static int copiasUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getCopias();
+        return a;
+    }
+    public static int edicionUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getEdicion();
+        return a;
+    }
+    public static int dispUser(int pos,int j){
+        int a;
+        a= bibliotecaUser[pos][j].getDisp();
+        return a;
+    }
+
 }

@@ -87,6 +87,7 @@ public class VentanaTesisController implements Initializable {
                 disp[i]=FuncionesTesis.mostrarDisp(i);
                 tesis[i]=new TesisTable(cod[i],autor[i], ano[i],titulo[i],edicion[i],desc[i],temas[i],area[i],copias[i],disp[i],palabras[i]);
                 cont=cont+1;
+            }
                 if(cont==1){
                     tesisTable= FXCollections.observableArrayList(
                             tesis[0]
@@ -151,7 +152,7 @@ public class VentanaTesisController implements Initializable {
                     tblLibro.setItems(tesisTable);
                 }
 
-            }
+
             FilteredList<TesisTable> filtro= new FilteredList<>(tesisTable, b -> true);
 
             txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{

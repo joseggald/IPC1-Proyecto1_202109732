@@ -37,4 +37,7 @@ public class EstudianteController implements Initializable {
     public void ventanaBiblioVirt(){
         this.escenarioPrincipal.cambiarEscenaBiblioVirt();
     }
+    public void ventanaPrestamos(){
+        this.escenarioPrincipal.cambiarEscenaPrestamosMain();
+    }
 }

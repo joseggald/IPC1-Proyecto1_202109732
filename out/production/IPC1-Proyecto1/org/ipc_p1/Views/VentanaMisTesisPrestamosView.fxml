@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventana" prefHeight="675.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.VentanaMisTesisPrestamosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="316.0" layoutY="31.0" stroke="#1d4a6f" strokeType="INSIDE" width="463.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="367.0" layoutY="31.0" prefHeight="43.0" prefWidth="359.0" text="Mis Prestamos Tesis" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="548.0" layoutX="21.0" layoutY="92.0" stroke="#1d4a6f" strokeType="INSIDE" width="1054.0" />
+      <TableView fx:id="tblLibro" layoutX="32.0" layoutY="186.0" prefHeight="263.0" prefWidth="1030.0">
+        <columns>
+          <TableColumn fx:id="colAutor" prefWidth="114.99996948242188" text="Autor" />
+          <TableColumn fx:id="colAno" prefWidth="67.0" text="Año" />
+            <TableColumn fx:id="colTitulo" prefWidth="126.0" text="Titulo" />
+            <TableColumn fx:id="colDesc" prefWidth="132.0" text="Descripcion" />
+            <TableColumn fx:id="colCopias" prefWidth="74.0" text="Copias" />
+            <TableColumn fx:id="colArea" prefWidth="115.0" text="Area" />
+            <TableColumn fx:id="colEdicion" prefWidth="68.0" text="Edicion" />
+            <TableColumn fx:id="colTema" prefWidth="103.0" text="Tema" />
+            <TableColumn fx:id="colPalabras" prefWidth="133.0" text="Palabras" />
+            <TableColumn fx:id="colPrestar" minWidth="0.0" prefWidth="100.0" text="Devolver" />
+            <TableColumn fx:id="colCod" minWidth="0.0" prefWidth="1.0" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="62.0" fitWidth="103.0" layoutX="31.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="regresar" layoutX="31.0" layoutY="539.0" mnemonicParsing="false" onAction="#ventanaMain" prefHeight="83.0" prefWidth="103.0" text="REGRESAR " />
+      <TextField fx:id="txtBuscar" layoutX="121.0" layoutY="129.0" prefHeight="31.0" prefWidth="937.0" promptText="Buscar..." />
+      <Label layoutX="51.0" layoutY="132.0" prefHeight="25.0" prefWidth="63.0" text="Buscar:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
