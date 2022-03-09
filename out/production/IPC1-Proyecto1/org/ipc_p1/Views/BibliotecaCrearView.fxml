@@ -11,7 +11,7 @@
 <AnchorPane prefHeight="890.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.BiliotecaCrearController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="145.0" layoutY="43.0" stroke="#1d4a6f" strokeType="INSIDE" width="301.0" />
-      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="43.0" prefHeight="43.0" prefWidth="250.0" text="Crear Bibliografías" textAlignment="CENTER">
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="43.0" prefHeight="43.0" prefWidth="301.0" text="Crear Bibliografías" textAlignment="CENTER">
          <font>
             <Font size="29.0" />
          </font>

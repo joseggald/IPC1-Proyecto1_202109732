@@ -5,7 +5,7 @@ import org.ipc_p1.models.Usuario;
 
 public class FuncionesUsuario {
     //VARIABLES PRINCIPALES
-    public static int limite=100, loginNoFound=0, cont=2, c, actual,a;
+    public static int limite=100, loginNoFound=0, cont=1, c, actual,a;
     private static Usuario users[]=new Usuario[100];
     public static String rl;
     //DATOS A MOSTRAR
@@ -27,7 +27,6 @@ public class FuncionesUsuario {
         usern[0]=user.getUsername();
         pass[0]=user.getPassword();
         rol[0]=user.getRol();
-        users[1]=new Usuario(202001543,"alum","1234","Eduardo","Gonzalez","Usuario");
         a=1;
         return a;
     }
