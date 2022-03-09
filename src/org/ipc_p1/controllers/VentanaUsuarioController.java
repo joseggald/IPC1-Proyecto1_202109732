@@ -10,6 +10,9 @@ import javafx.scene.layout.AnchorPane;
 import org.ipc_p1.models.UsuarioTable;
 import org.ipc_p1.sistema.Main;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -183,6 +186,160 @@ public class VentanaUsuarioController implements Initializable {
             colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
             tblUsuario.setItems(usuarios);
         }
+        if(tam==10){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==11){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==12){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==13){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==14){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==15){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==16){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==17){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15],users[16]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==18){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15],users[16],users[17]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==19){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15],users[16],users[17],users[18]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==20){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15],users[16],users[17],users[18],users[19]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
+        if(tam==21){
+            usuarios= FXCollections.observableArrayList(
+                    users[0], users[1],users[2], users[3], users[4],users[5],users[6],users[7],users[8],users[9],users[10]
+                    ,users[11], users[12],users[13], users[14], users[15],users[16],users[17],users[18],users[19],users[20]
+            );
+            colDpi.setCellValueFactory(new PropertyValueFactory<UsuarioTable, Integer>("cui"));
+            colNom.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("nom"));
+            colApe.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("ape"));
+            colUser.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("us"));
+            colPass.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("pass"));
+            colRol.setCellValueFactory(new PropertyValueFactory<UsuarioTable, String>("rl"));
+            tblUsuario.setItems(usuarios);
+        }
 
 
     }
@@ -238,28 +395,50 @@ public class VentanaUsuarioController implements Initializable {
     }
 
     public void btnModificar(){
-
-        if(txtPassword.getText().equals(txtPassRevisar.getText())){
-            int dp;
-            String nom,ape,pass,user,rol;
-            dp=Integer.parseInt(txtDpi.getText());
-            nom=txtNombre.getText();
-            ape=txtApellido.getText();
-            pass=txtPassword.getText();
-            user=txtUsuario.getText();
-            rol=cmbRol.getSelectionModel().getSelectedItem();
-            if(rol==null){
-                rol=rl;
+        int a = 1;
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        for (int i = 0; i < array.length; i++) {
+            if (txtDpi.getText().contains(array[i])) {
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("El DPI no puede llevar letras.");
+                aviso.show();
+                a=2;
             }
-            funcionesUsuario.modificarUsuario(dp,nom,ape,user,pass,rol);
-            this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
-        }else {
+
+        }
+        if(txtUsuario.getText().isEmpty() || txtApellido.getText().isEmpty() || txtNombre.getText().isEmpty() || txtPassword.getText().isEmpty() || txtPassRevisar.getText().isEmpty()||txtDpi.getText().trim().isEmpty()){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("NO MODIFICADO");
-            aviso.setContentText("Debe de coincidir la nueva contraseña.");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("No deje campos vacios.");
             aviso.show();
+
+        }else if(a!=2){
+            if(txtPassword.getText().equals(txtPassRevisar.getText())){
+                int dp;
+                String nom,ape,pass,user,rol;
+                dp=Integer.parseInt(txtDpi.getText());
+                nom=txtNombre.getText();
+                ape=txtApellido.getText();
+                pass=txtPassword.getText();
+                user=txtUsuario.getText();
+                rol=cmbRol.getSelectionModel().getSelectedItem();
+                if(rol==null){
+                    rol=rl;
+                }
+                funcionesUsuario.modificarUsuario(dp,nom,ape,user,pass,rol);
+                this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
+            }else {
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("NO MODIFICADO");
+                aviso.setContentText("Debe de coincidir la nueva contraseña.");
+                aviso.show();
+            }
         }
+
 
     }
 
@@ -334,6 +513,124 @@ public class VentanaUsuarioController implements Initializable {
             aviso.show();
         }
 
+    }
+    public void reporte(){
+        // para crear un archivo
+        File archivo = new File("reportes\\usuarios.html");
+        // aperturar un archivo
+        FileWriter escribir;
+        // crear nuevas lineas dentro un archivo
+        PrintWriter nuevaLinea;
+        int prestados;
+        if(!archivo.exists()){
+            try {
+                //crear mi archivo
+                archivo.createNewFile();
+                // le pasao el archivo donde quiero escribir, true
+                escribir = new FileWriter(archivo,true);
+                // escribiendo dentro de mi archivo
+                nuevaLinea = new PrintWriter(escribir);
+                nuevaLinea.println("<!DOCTYPE html>\n" +
+                                "<html style=\"font-size: 16px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\">\n" +
+                                "  <head>\n" +
+                                "    <meta charset=\"UTF-8\">\n" +
+                                "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n" +
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
+                                "    <title>Proyecto 1 - 202109732 - José Galdámez</title>\n" +
+                                "    <link rel=\"stylesheet\" href=\"CSS/style.css\">\n" +
+                                "  </head>\n" +
+                                "  <body ><header ><div></div></header> \n" +
+                                "    <section>\n" +
+                                "      <div>\n" +
+                                "        <h1 style=\"text-align: center; font-size: 1.75rem;\"> Reporte de Usuarios 2022</h1>\n" +
+                                "        <h3 style=\"text-align: center; font-size: 1.6rem;\"> LABORATORIO IPC1- PRIMER SEMESTRE 2022</h3>\n" +
+                                "        <h3 style=\"text-align: center; font-size: 1.3rem;\"> Creado por José Galdámez/202109732</h3> "
+                               );
+
+                for (int i=1; i<FuncionesUsuario.lim(); i++){
+
+                    prestados=FuncionesRevistas.prestados[i]+FuncionesTesis.prestados[i]+FuncionesLibros.prestados[i];
+                    nuevaLinea.println( "<p style=\"padding-top: 5rem;\">\n" +
+                            "          <span style=\"font-size: 1.1rem; padding-left: 3rem;\">DPI: "+  FuncionesUsuario.mostrarDPI(i) +"</span>\n" +
+                            "          <br>\n" +
+                            "        </p>\n" +
+                            "        <p>\n" +
+                            "          <span style=\"font-size: 1.1rem; padding-left: 3rem;\">Nombre Completo: "+ FuncionesUsuario.mostrarNom(i)+" "+ FuncionesUsuario.mostrarApe(i)+"</span>\n" +
+                            "          <br>\n" +
+                            "        </p>\n" +
+                            "        <p>\n" +
+                            "          <span style=\"font-size: 1.1rem; padding-left: 3rem;\"> No. de libros prestados: "+prestados+"</span>\n" +
+                            "          <br>\n" +
+                            "        </p>"
+
+                    );
+                    if(prestados>0) {
+                        nuevaLinea.println("<Center>\n" +
+                                "          <span style=\"font-size: 1.5rem; font-weight: bold; padding: 2rem;\">Libros prestados del Usuario: </span>\n" +
+                                "          <br>\n" +
+                                "          <table style=\"padding-top: 1rem; width: 90%; border: 1px solid black; border-collapse: collapse;\">\n" +
+                                "            <tr style=\"text-align: center; border: 1px solid black; border-collapse: collapse;\">\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Tipo</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Titulo</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Autor</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Año de publicación</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Descripción</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Temas</th>\n" +
+                                "              <th style=\"border: 1px solid black; border-collapse: collapse; background-color: sandybrown;\">Palabras</th>\n" +
+                                "            </tr>");
+                        for (int j = 0; j < FuncionesLibros.prestados[i]; j++) {
+                            nuevaLinea.println("<tr style=\"text-align: center;\">\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse;\">Libro</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.tituloUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.autorUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.anoUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.descUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.temasUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesLibros.palabrasUser(i, j) + "</td>\n" +
+                                    "          \n" +
+                                    "            </tr>");
+                        }
+                        for (int j = 0; j < FuncionesRevistas.prestados[i]; j++) {
+                            nuevaLinea.println("<tr style=\"text-align: center;\">\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">Revistas</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.tituloUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.autorUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.anoUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.descUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.temasUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesRevistas.palabrasUser(i, j) + "</td>\n" +
+                                    "          \n" +
+                                    "            </tr>");
+                        }
+                        for (int j = 0; j < FuncionesTesis.prestados[i]; j++) {
+                            nuevaLinea.println("<tr style=\"text-align: center;\">\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">Tesis</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.tituloUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.autorUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.anoUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.descUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.temasUser(i, j) + "</td>\n" +
+                                    "              <td style=\"border: 1px solid black; border-collapse: collapse; padding: 10px;\">" + FuncionesTesis.palabrasUser(i, j) + "</td>\n" +
+                                    "          \n" +
+                                    "            </tr>");
+                        }
+                        nuevaLinea.println("</table>\n" +
+                                "        </Center>");
+                    }
+                }
+                nuevaLinea.println("</section>\n" +
+                        "        \n" +
+                        "</div>    \n" +
+                        "</body>\n" +
+                        "</html>");
+
+                escribir.close();
+
+
+            } catch (Exception e) {
+
+            }
+        }
     }
 
 }

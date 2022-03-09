@@ -124,7 +124,8 @@ public class VentanaRevistasController implements Initializable {
                 colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
                 colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
                 tblLibro.setItems(revistaTable);
-            }if(cont==3){
+            }
+            if(cont==3){
                 revistaTable= FXCollections.observableArrayList(
                         revista[0], revista[1], revista[2]
                 );
@@ -157,7 +158,8 @@ public class VentanaRevistasController implements Initializable {
                 colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
                 colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
                 tblLibro.setItems(revistaTable);
-            }if(cont==4){
+            }
+            if(cont==5){
                 revistaTable= FXCollections.observableArrayList(
                         revista[0], revista[1], revista[2], revista[3], revista[4]
                 );
@@ -173,7 +175,273 @@ public class VentanaRevistasController implements Initializable {
                 colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
                 colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
                 tblLibro.setItems(revistaTable);
-            }else{
+            }
+            if(cont==6){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==7){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==8){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==9){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==10){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==11){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==12){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==13){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==14){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==15){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==16){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14], revista[15]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==17){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14], revista[15], revista[16]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==18){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14], revista[15], revista[16], revista[17]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==19){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14], revista[15], revista[16], revista[17], revista[18]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==20){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0], revista[1], revista[2], revista[3], revista[4], revista[5], revista[6], revista[7], revista[8], revista[9],
+                        revista[10], revista[11], revista[12], revista[13], revista[14], revista[15], revista[16], revista[17], revista[18], revista[19]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasTable, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasTable, Integer>("ejemplares"));
+                tblLibro.setItems(revistaTable);
+            }
+            else{
                 System.out.println("x");
             }
 
@@ -309,27 +577,42 @@ public class VentanaRevistasController implements Initializable {
     public void btnModificar(){
         int ano,copias,edicion, ejemplar;
         String autor,titulo,desc,palabra,tema,cod,cate;
-        autor=txtAutor.getText();
-        cod=revistaTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getCod();
-        ano=Integer.parseInt(txtAno.getText());
-        titulo=txtTitulo.getText();
-        desc=txtDesc.getText();
-        cate=txtCate.getText();
-        palabra=txtPalabra.getText();
-        copias =Integer.parseInt(txtCopias.getText());
-        ejemplar=Integer.parseInt(txtEjemplar.getText());
-        edicion=Integer.parseInt(txtEdicion.getText());
-        tema=txtTema.getText();
 
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        int a=1;
 
-        if(autor.isEmpty() && titulo.isEmpty()){
+        for (int i = 0; i < array.length; i++) {
+            if (txtAno.getText().contains(array[i]) || txtCopias.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                a=2;
+            }
+        }
+        if(a==2){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("NO MODIFICADO");
-            aviso.setContentText("Debe de llenar todos los campos.");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("Los campos de año, copias y edicion no pueden llevar letras.");
             aviso.show();
+        }
+        if (txtAutor.getText().isEmpty() ||txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtCate.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty()|| txtTema.getText().isEmpty() || txtCopias.getText().isEmpty() || txtEjemplar.getText().isEmpty()){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Registro no guardado!");
+            aviso.setContentText("Revise si lleno corectamente los campos.");
+            aviso.show();
+            a=2;
 
-        }else {
+        }else if(a!=2){
+            autor=txtAutor.getText();
+            cod=revistaTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getCod();
+            ano=Integer.parseInt(txtAno.getText());
+            titulo=txtTitulo.getText();
+            desc=txtDesc.getText();
+            cate=txtCate.getText();
+            palabra=txtPalabra.getText();
+            copias =Integer.parseInt(txtCopias.getText());
+            ejemplar=Integer.parseInt(txtEjemplar.getText());
+            edicion=Integer.parseInt(txtEdicion.getText());
+            tema=txtTema.getText();
             FuncionesRevistas.modificarRevista(cod,autor,ano,titulo,edicion,desc,cate,tema,ejemplar,copias,copias,palabra);
             this.escenarioPrincipal.cambiarEscenaRevistas();
         }

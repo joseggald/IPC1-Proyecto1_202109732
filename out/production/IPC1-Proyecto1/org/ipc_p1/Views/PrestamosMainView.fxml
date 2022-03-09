@@ -34,6 +34,6 @@
       <Button layoutX="80.0" layoutY="385.0" mnemonicParsing="false" onAction="#ventanaMisLibrosPrestamos" prefHeight="43.0" prefWidth="166.0" text="Libros" />
       <Button layoutX="277.0" layoutY="385.0" mnemonicParsing="false" onAction="#ventanaMisRevistas" prefHeight="43.0" prefWidth="159.0" text="Revistas" />
       <Button layoutX="458.0" layoutY="385.0" mnemonicParsing="false" onAction="#ventanaMisTesis" prefHeight="43.0" prefWidth="159.0" text="Tesis" />
-      <Button fx:id="regresar1" layoutX="443.0" layoutY="512.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="208.0" text="Reporte de Prestamos" />
+      <Button fx:id="regresar1" layoutX="443.0" layoutY="512.0" mnemonicParsing="false" onAction="#reportes" prefHeight="43.0" prefWidth="208.0" text="Reporte de Prestamos" />
    </children>
 </AnchorPane>

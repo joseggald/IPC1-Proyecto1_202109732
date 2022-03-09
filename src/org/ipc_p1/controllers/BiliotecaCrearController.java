@@ -139,7 +139,8 @@ public class BiliotecaCrearController implements Initializable {
     public void guardar(){
         String tipo;
         tipo=cmbTipo.getSelectionModel().getSelectedItem();
-
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        int a=1;
         String autor;
         int ano;
         String titulo;
@@ -163,93 +164,145 @@ public class BiliotecaCrearController implements Initializable {
             aviso.show();
         }
         if(tipo.equals("Libro")){
-            autor = txtAutor.getText();
-            ano = Integer.valueOf(txtAno.getText());
-            titulo = txtTitulo.getText();
-            desc = txtDesc.getText();
-            palabras = txtPalabra.getText();
-            copias = Integer.valueOf(txtCopias.getText());
-            isbn = Integer.valueOf(txtIsbn.getText());
-            edicion = Integer.valueOf(txtEdicion.getText());
-            temas = txtTema.getText();
-            dispo=copias;
-            if (autor.length()==0  || txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtIsbn.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
+
+            for (int i = 0; i < array.length; i++) {
+            if (txtAno.getText().contains(array[i]) || txtIsbn.getText().contains(array[i]) || txtCopias.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                a=2;
+            }
+            }
+            if(a==2){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("Los campos de año, isbn, copias y edicion no pueden llevar letras.");
+                aviso.show();
+            }
+            if (txtAutor.getText().isEmpty()  || txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty() || txtCopias.getText().isEmpty() || txtIsbn.getText().isEmpty() || txtEdicion.getText().isEmpty() || txtTema.getText().isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
-                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.setContentText("Revise si lleno corectamente los campos.");
                 aviso.show();
-
-            }else{
+                a=2;
+            }else if(a!=2){
+                autor = txtAutor.getText();
+                ano = Integer.valueOf(txtAno.getText());
+                titulo = txtTitulo.getText();
+                desc = txtDesc.getText();
+                palabras = txtPalabra.getText();
+                copias = Integer.valueOf(txtCopias.getText());
+                isbn = Integer.valueOf(txtIsbn.getText());
+                edicion = Integer.valueOf(txtEdicion.getText());
+                temas = txtTema.getText();
+                dispo=copias;
                 FuncionesLibros.crearLibro(autor,ano,titulo,edicion,isbn,palabras,desc,temas,copias,dispo);
                 this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }
 
         }
         if(tipo.equals("Revista")){
-            autor=txtAutor.getText();
-            ano=Integer.valueOf(txtAno.getText());
-            titulo=txtTitulo.getText();
-            cate=txtCate.getText();
-            desc=txtDesc.getText();
-            palabras=txtPalabra.getText();
-            copias = Integer.valueOf(txtCopias.getText());
-            edicion = Integer.valueOf(txtEdicion.getText());
-            temas = txtTema.getText();
-            ejemplares=Integer.valueOf(txtEjemplar.getText());
+            for (int i = 0; i < array.length; i++) {
+                if (txtAno.getText().contains(array[i]) || txtEjemplar.getText().contains(array[i]) || txtCopias.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                    a=2;
+                }
+            }
+            if(a==2){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("Los campos de año, ejemplares, copias y edicion no pueden llevar letras.");
+                aviso.show();
+            }
 
-            if (autor.length()==0  || cate.isEmpty()  || txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtEjemplar.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
+            if (txtAutor.getText().isEmpty() || txtCate.getText().isEmpty()  || txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty() || txtCopias.getText().isEmpty() || txtEjemplar.getText().isEmpty() || txtEdicion.getText().isEmpty() ||txtTema.getText().isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
-                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.setContentText("Revise si lleno corectamente los campos.");
                 aviso.show();
+                a=2;
 
-            }else{
-                    FuncionesRevistas.crearRevistas(autor,ano,titulo,edicion,desc,cate,temas,ejemplares,copias,copias,palabras);
+            }else if(a!=2){
+                autor=txtAutor.getText();
+                ano=Integer.valueOf(txtAno.getText());
+                titulo=txtTitulo.getText();
+                cate=txtCate.getText();
+                desc=txtDesc.getText();
+                palabras=txtPalabra.getText();
+                copias = Integer.valueOf(txtCopias.getText());
+                edicion = Integer.valueOf(txtEdicion.getText());
+                temas = txtTema.getText();
+                ejemplares=Integer.valueOf(txtEjemplar.getText());
+                FuncionesRevistas.crearRevistas(autor,ano,titulo,edicion,desc,cate,temas,ejemplares,copias,copias,palabras);
                 this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }
         }
         if(tipo.equals("Tesis")){
-            autor=txtAutor.getText();
-            ano=Integer.valueOf(txtAno.getText());
-            titulo=txtTitulo.getText();
-            edicion = Integer.valueOf(txtEdicion.getText());
-            desc=txtDesc.getText();
-            temas=txtTema.getText();
-            areas=txtArea.getText();
-            copias = Integer.valueOf(txtCopias.getText());
-            palabras=txtPalabra.getText();
+            for (int i = 0; i < array.length; i++) {
+                if (txtAno.getText().contains(array[i]) || txtCopias.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                    a=2;
+                }
+            }
+            if(a==2){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("Los campos de año, copias y edicion no pueden llevar letras.");
+                aviso.show();
+            }
 
-            if (autor.length()==0 || areas.isEmpty() ||txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || txtCopias.getText().isEmpty() || txtEdicion.getText().isEmpty() || temas.isEmpty()){
+            if (txtArea.getText().isEmpty() || txtAutor.getText().isEmpty()  || txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty() || txtCopias.getText().isEmpty() || txtEdicion.getText().isEmpty() ||txtTema.getText().isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
-                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.setContentText("Revise si lleno corectamente los campos.");
                 aviso.show();
+                a=2;
 
-            }else{
+            }else if(a!=2){
+                autor=txtAutor.getText();
+                ano=Integer.valueOf(txtAno.getText());
+                titulo=txtTitulo.getText();
+                edicion = Integer.valueOf(txtEdicion.getText());
+                desc=txtDesc.getText();
+                temas=txtTema.getText();
+                areas=txtArea.getText();
+                copias = Integer.valueOf(txtCopias.getText());
+                palabras=txtPalabra.getText();
                 FuncionesTesis.crearTesis(autor,ano,titulo,edicion,desc,temas,areas,copias,copias,palabras);
                 this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }
         }
         if(tipo.equals("Libro Virtual")){
-            autor = txtAutor.getText();
-            ano = Integer.valueOf(txtAno.getText());
-            titulo = txtTitulo.getText();
-            desc = txtDesc.getText();
-            palabras = txtPalabra.getText();
-            temas = txtTema.getText();
-            tam = Integer.valueOf(txtTam.getText());
-            edicion = Integer.valueOf(txtEdicion.getText());
-            if (autor.length()==0 ||txtAno.getText().isEmpty() || titulo.isEmpty() || desc.isEmpty() || palabras.isEmpty() || temas.isEmpty() || txtTam.getText().isEmpty()){
+            for (int i = 0; i < array.length; i++) {
+                if (txtAno.getText().contains(array[i]) || txtTam.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                    a=2;
+                }
+            }
+            if(a==2){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("Los campos de año, copias y edicion no pueden llevar letras.");
+                aviso.show();
+            }
+            if (txtAutor.getText().isEmpty() ||txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty()|| txtTema.getText().isEmpty() || txtTam.getText().isEmpty()){
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
-                aviso.setContentText("Datos erroneos. Revise si lleno corectamente los campos.");
+                aviso.setContentText("Revise si lleno corectamente los campos.");
                 aviso.show();
+                a=2;
 
-            }else{
+            }else if(a!=2){
+                autor = txtAutor.getText();
+                ano = Integer.valueOf(txtAno.getText());
+                titulo = txtTitulo.getText();
+                desc = txtDesc.getText();
+                palabras = txtPalabra.getText();
+                temas = txtTema.getText();
+                tam = Integer.valueOf(txtTam.getText());
+                edicion = Integer.valueOf(txtEdicion.getText());
                 FuncionesLibrosVirtuales.crearLbVirtuales(autor,ano,titulo,palabras,desc,temas,tam,edicion);
                 this.escenarioPrincipal.cambiarEscenaVentanaBiblio();
             }

@@ -7,7 +7,7 @@ import org.ipc_p1.models.Tesis;
 
 public class FuncionesLibrosVirtuales {
     private static LibrosVirtuales librosVirtuales[]=new LibrosVirtuales[100];
-    public static int cont=3,c,res,lim=0;
+    public static int cont=1,c,res,lim=0;
     public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
     private static LibrosVirtuales bibliotecaUser[][]=new LibrosVirtuales[100][100];
@@ -40,9 +40,7 @@ public class FuncionesLibrosVirtuales {
         }
     }
     public static int lim(){
-        librosVirtuales[0]=new LibrosVirtuales("1","Mario",2021,"Matematicas I","aaaaaa","mate mas mate","Sumas,restas y funciones.",145,46);
-        librosVirtuales[1]=new LibrosVirtuales("2","Karl",2021,"Matematicas II","aaaaaa","mate mas mate","Sumas,restas y funciones.",450,14);
-        c=cont-1;
+       c=cont-1;
         return c;
     }
 

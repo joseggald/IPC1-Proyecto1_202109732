@@ -45,6 +45,15 @@ public class Main extends Application {
         }
 
     }
+    public void cambiarEscenaAbout(){
+        try{
+            AboutController controlador = (AboutController) this.cambiarEscena("About.fxml",529,433);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
     public void cambiarEscenaAdmin(){
         try{
             AdminController controlador = (AdminController) this.cambiarEscena("AdminView.fxml",571,231);
@@ -94,6 +103,15 @@ public class Main extends Application {
     public void cambiarEscenaCrearIndiviBiblio(){
         try{
             BiliotecaCrearController controlador = (BiliotecaCrearController) this.cambiarEscena("BibliotecaCrearView.fxml",567,890);
+            controlador.setEscenarioPrincipal(this);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+    public void cambiarEscenaCrearMasivoBiblio(){
+        try{
+            BiliotecaCrearMasivoController controlador = (BiliotecaCrearMasivoController) this.cambiarEscena("BibliotecaCrearMasivoView.fxml",1068,624);
             controlador.setEscenarioPrincipal(this);
         }catch(IOException e){
             e.printStackTrace();

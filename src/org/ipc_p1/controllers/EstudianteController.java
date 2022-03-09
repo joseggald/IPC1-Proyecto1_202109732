@@ -10,10 +10,12 @@ import java.util.ResourceBundle;
 
 public class EstudianteController implements Initializable {
     private Main escenarioPrincipal;
+
     @FXML private TextField txtUsuario;
     @FXML private TextField txtNombre;
     @FXML private TextField txtApellido;
     @FXML private TextField txtDpi;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         int i=FuncionesUsuario.actual;
@@ -37,6 +39,7 @@ public class EstudianteController implements Initializable {
     public void ventanaBiblioVirt(){
         this.escenarioPrincipal.cambiarEscenaBiblioVirt();
     }
+
     public void ventanaPrestamos(){
         this.escenarioPrincipal.cambiarEscenaPrestamosMain();
     }

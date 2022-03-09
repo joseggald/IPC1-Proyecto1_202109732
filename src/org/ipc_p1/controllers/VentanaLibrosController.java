@@ -203,6 +203,196 @@ public class VentanaLibrosController implements Initializable {
                 colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
                 tblLibro.setItems(librosTable);
             }
+            if(cont==9){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==10){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==11){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==12){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==13){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==14){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==15){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==16){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==17){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==18){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==19){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==20){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18],libros[19]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosTable, Integer>("isbn"));
+                tblLibro.setItems(librosTable);
+            }
             FilteredList<LibrosTable> filtro= new FilteredList<>(librosTable, b -> true);
 
             txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{
@@ -328,26 +518,37 @@ public class VentanaLibrosController implements Initializable {
     public void btnModificar(){
         int ano,copias,isbn,edicion;
         String autor,titulo,desc,palabra,tema;
-        autor=txtAutor.getText();
-        ano=Integer.parseInt(txtAno.getText());
-        titulo=txtTitulo.getText();
-        desc=txtDesc.getText();
-        palabra=txtPalabra.getText();
-        copias =Integer.parseInt(txtCopias.getText());
-        isbn=Integer.parseInt(txtIsbn.getText());
-
-        edicion=Integer.parseInt(txtEdicion.getText());
-        tema=txtTema.getText();
-
-
-        if(autor.isEmpty() && titulo.isEmpty()){
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        int a=1;
+        for (int i = 0; i < array.length; i++) {
+            if (txtAno.getText().contains(array[i]) || txtIsbn.getText().contains(array[i]) || txtCopias.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                a=2;
+            }
+        }
+        if(a==2){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("NO MODIFICADO");
-            aviso.setContentText("Debe de llenar todos los campos.");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("Los campos de año, isbn, copias y edicion no pueden llevar letras.");
             aviso.show();
-
-        }else {
+        }
+        if (txtAutor.getText().isEmpty()  || txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty() || txtCopias.getText().isEmpty() || txtIsbn.getText().isEmpty() || txtEdicion.getText().isEmpty() || txtTema.getText().isEmpty()){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Registro no Modificado!");
+            aviso.setContentText("Revise si lleno corectamente los campos.");
+            aviso.show();
+            a=2;
+        }else if(a!=2){
+            autor=txtAutor.getText();
+            ano=Integer.parseInt(txtAno.getText());
+            titulo=txtTitulo.getText();
+            desc=txtDesc.getText();
+            palabra=txtPalabra.getText();
+            copias =Integer.parseInt(txtCopias.getText());
+            isbn=Integer.parseInt(txtIsbn.getText());
+            edicion=Integer.parseInt(txtEdicion.getText());
+            tema=txtTema.getText();
             FuncionesLibros.modificarLibro(autor,ano,titulo,edicion,isbn,palabra,desc,tema,copias,copias);
             this.escenarioPrincipal.cambiarEscenaLibros();
         }

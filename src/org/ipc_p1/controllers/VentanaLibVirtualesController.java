@@ -145,6 +145,272 @@ public class VentanaLibVirtualesController implements Initializable {
                 tblLibro.setItems(librosTable);
 
             }
+            if(cont==5){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==6){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==7){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==8){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==9){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==10){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==11){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==12){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==13){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==14){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==15){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==16){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==17){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==18){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==19){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
+            if(cont==20){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18],libros[19]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("año"));
+                colTam.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("tam"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, Integer>("edicion"));
+                colCod.setCellValueFactory(new PropertyValueFactory<LibrosVirtualesTable, String>("cod"));
+                tblLibro.setItems(librosTable);
+
+            }
             FilteredList<LibrosVirtualesTable> filtro= new FilteredList<>(librosTable, b -> true);
 
             txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{
@@ -266,27 +532,39 @@ public class VentanaLibVirtualesController implements Initializable {
     public void btnModificar(){
         int ano,tam,edicion;
         String autor,titulo,desc,palabra,tema,cod;
-        autor=txtAutor.getText();
-        cod=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getCod();
-        ano=Integer.parseInt(txtAno.getText());
-        titulo=txtTitulo.getText();
-        desc=txtDesc.getText();
-        palabra=txtPalabra.getText();
-        tam =Integer.parseInt(txtTam.getText());
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        int a=1;
 
-
-        edicion=Integer.parseInt(txtEdicion.getText());
-        tema=txtTema.getText();
-
-
-        if(autor.isEmpty() && titulo.isEmpty()){
+        for (int i = 0; i < array.length; i++) {
+            if (txtAno.getText().contains(array[i]) || txtTam.getText().contains(array[i]) || txtEdicion.getText().contains(array[i])) {
+                a=2;
+            }
+        }
+        if(a==2){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("NO MODIFICADO");
-            aviso.setContentText("Debe de llenar todos los campos.");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("Los campos de año, copias y edicion no pueden llevar letras.");
             aviso.show();
+        }
+        if (txtAutor.getText().isEmpty() ||txtAno.getText().isEmpty() || txtTitulo.getText().isEmpty() || txtDesc.getText().isEmpty() || txtPalabra.getText().isEmpty()|| txtTema.getText().isEmpty() || txtTam.getText().isEmpty()|| txtEdicion.getText().isEmpty()){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Registro no modificado!");
+            aviso.setContentText("Revise si lleno corectamente los campos.");
+            aviso.show();
+            a=2;
 
-        }else {
+        }else if(a!=2){
+            autor=txtAutor.getText();
+            cod=librosTable.get(tblLibro.getSelectionModel().getSelectedIndex()).getCod();
+            ano=Integer.parseInt(txtAno.getText());
+            titulo=txtTitulo.getText();
+            desc=txtDesc.getText();
+            palabra=txtPalabra.getText();
+            tam =Integer.parseInt(txtTam.getText());
+            edicion=Integer.parseInt(txtEdicion.getText());
+            tema=txtTema.getText();
             FuncionesLibrosVirtuales.modificarLibro(cod,autor,ano,titulo,palabra,desc,tema,tam,edicion);
             this.escenarioPrincipal.cambiarEscenaLibrosVirtuales();
         }

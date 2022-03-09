@@ -98,7 +98,304 @@ public class VentanaMisLibrosPrestamosController implements Initializable {
                 colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
                 tblLibro.setItems(librosTable);
             }
-
+            if(cont==3){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==4){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==5){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==6){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==7){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==8){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==9){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==10){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==11){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==12){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==13){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==14){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==15){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==16){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==17){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==18){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==19){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
+            if(cont==20){
+                librosTable= FXCollections.observableArrayList(
+                        libros[0],libros[1],libros[2],libros[3],libros[4],libros[5],libros[6],libros[7],libros[8],libros[9],
+                        libros[10],libros[11],libros[12],libros[13],libros[14],libros[15],libros[16],libros[17],libros[18],libros[19]
+                );
+                colAutor.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("temas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("copias"));
+                colIsbn.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, Integer>("isbn"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<LibrosBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(librosTable);
+            }
         }
 
     }
@@ -154,7 +451,210 @@ public class VentanaMisLibrosPrestamosController implements Initializable {
                 this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
             }
         }
-
+        if(actionEvent.getSource()==btnPrestar[4]){
+            codigo=isbn[4];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[5]){
+            codigo=isbn[5];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[6]){
+            codigo=isbn[6];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[7]){
+            codigo=isbn[7];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[8]){
+            codigo=isbn[8];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[9]){
+            codigo=isbn[9];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[10]){
+            codigo=isbn[10];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[11]){
+            codigo=isbn[11];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[12]){
+            codigo=isbn[12];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[13]){
+            codigo=isbn[13];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[14]){
+            codigo=isbn[14];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[15]){
+            codigo=isbn[15];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[16]){
+            codigo=isbn[16];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[17]){
+            codigo=isbn[17];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[18]){
+            codigo=isbn[18];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[19]){
+            codigo=isbn[19];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[20]){
+            codigo=isbn[20];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Libro.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesLibros.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosLibros();
+            }
+        }
     }
     public void setEscenarioPrincipal(Main escenarioPrincipal) {
 

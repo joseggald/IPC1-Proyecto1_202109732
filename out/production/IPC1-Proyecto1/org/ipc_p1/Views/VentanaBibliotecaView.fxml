@@ -19,7 +19,7 @@
       <Button layoutX="411.0" layoutY="181.0" mnemonicParsing="false" onAction="#ventanaLibros" prefHeight="43.0" prefWidth="166.0" text="Libros" />
       <Button layoutX="414.0" layoutY="253.0" mnemonicParsing="false" onAction="#ventanaLibrosVirtuales" prefHeight="43.0" prefWidth="159.0" text="Libros Virtuales" />
       <Button fx:id="regresar" layoutX="46.0" layoutY="505.0" mnemonicParsing="false" onAction="#ventanaMain" prefHeight="43.0" prefWidth="136.0" text="REGRESAR " />
-      <Button fx:id="aceptar1" layoutX="85.0" layoutY="331.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="223.0" text="Crear en Carga Masiva" />
+      <Button fx:id="aceptar1" layoutX="85.0" layoutY="331.0" mnemonicParsing="false" onAction="#crearMasivo" prefHeight="79.0" prefWidth="223.0" text="Crear en Carga Masiva" />
       <Button layoutX="414.0" layoutY="319.0" mnemonicParsing="false" onAction="#ventanaRevista" prefHeight="43.0" prefWidth="159.0" text="Revistas" />
       <Button layoutX="414.0" layoutY="385.0" mnemonicParsing="false" onAction="#ventanaTesis" prefHeight="43.0" prefWidth="159.0" text="Tesis" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="119.0" layoutY="132.0" stroke="#1d4a6f" strokeType="INSIDE" width="166.0" />
@@ -34,5 +34,6 @@
             <Font size="29.0" />
          </font>
       </Label>
+      <Button layoutX="403.0" layoutY="505.0" mnemonicParsing="false" onAction="#reportes" prefHeight="43.0" prefWidth="246.0" text="Reporte de Biblioteca" />
    </children>
 </AnchorPane>

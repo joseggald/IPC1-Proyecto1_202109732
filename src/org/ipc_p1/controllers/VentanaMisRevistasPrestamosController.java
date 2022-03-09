@@ -143,6 +143,268 @@ public class VentanaMisRevistasPrestamosController implements Initializable {
                 colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
                 tblLibro.setItems(revistaTable);
             }
+            if(cont==5){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==8){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==9){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==10){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==11){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==12){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==13){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==14){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==15){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==16){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14],revista[15]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==17){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14],revista[15],revista[16]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==18){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14],revista[15],revista[16],revista[17]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==19){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14],revista[15],revista[16],revista[17],revista[18]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
+            if(cont==20){
+                revistaTable= FXCollections.observableArrayList(
+                        revista[0],revista[1],revista[2],revista[3],revista[4],revista[5],revista[6],revista[7],revista[8],revista[9],
+                        revista[10],revista[11],revista[12],revista[13],revista[14],revista[15],revista[16],revista[17],revista[18],revista[19]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("temas"));
+                colCate.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("cate"));
+                colAno.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("copias"));
+                colEjemplares.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, Integer>("ejemplares"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<RevistasBiblioDev, String>("btnPrestar"));
+                tblLibro.setItems(revistaTable);
+            }
             FilteredList<RevistasBiblioDev> filtro= new FilteredList<>(revistaTable, b -> true);
 
             txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{
@@ -252,7 +514,210 @@ public class VentanaMisRevistasPrestamosController implements Initializable {
                 this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
             }
         }
-
+        if(actionEvent.getSource()==btnPrestar[4]){
+            codigo=cod[4];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[5]){
+            codigo=cod[5];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[6]){
+            codigo=cod[6];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[7]){
+            codigo=cod[7];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[8]){
+            codigo=cod[8];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[9]){
+            codigo=cod[9];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[10]){
+            codigo=cod[10];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[11]){
+            codigo=cod[11];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[12]){
+            codigo=cod[12];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[13]){
+            codigo=cod[13];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[14]){
+            codigo=cod[14];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[15]){
+            codigo=cod[15];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[16]){
+            codigo=cod[16];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[17]){
+            codigo=cod[17];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[18]){
+            codigo=cod[18];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[19]){
+            codigo=cod[19];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
+        if(actionEvent.getSource()==btnPrestar[20]){
+            codigo=cod[20];
+            Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Devolucion de Revista.");
+            aviso.setContentText("Esta seguro de devolver?");
+            Optional<ButtonType> result = aviso.showAndWait();
+            if(result.get() == ButtonType.OK){
+                FuncionesRevistas.eliminarBiblio(codigo,user);
+                this.escenarioPrincipal.cambiarEscenaMisPrestamosRevistas();
+            }
+        }
     }
     public void setEscenarioPrincipal(Main escenarioPrincipal) {
         this.escenarioPrincipal = escenarioPrincipal;

@@ -2,6 +2,7 @@ package org.ipc_p1.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.ipc_p1.sistema.Main;
@@ -38,20 +39,28 @@ public class LoginController implements Initializable {
         us=txtUsuario.getText();
         ps=txtPassword.getText();
 
-        funcionesUsuario.login(us, ps);
 
-        if (funcionesUsuario.rl.equals("Administrador") && funcionesUsuario.res.equals("1")){
-            this.escenarioPrincipal.cambiarEscenaAdmin();
+        if(us.isEmpty() || ps.isEmpty()){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("Login");
+            aviso.setContentText("Debe de llenar los campos.");
+            aviso.show();
+        }else{
+            funcionesUsuario.login(us, ps);
+            if(FuncionesUsuario.loginNoFound==1 && funcionesUsuario.res.equals("2")){
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("Login");
+                aviso.setContentText("Datos erroneos, porfavor vuelva a intentar.");
+                aviso.show();
+            }
         }
-        else if(funcionesUsuario.rl.equals("Usuario") && funcionesUsuario.res.equals("1")){
+        if (funcionesUsuario.rl.equals("Administrador") && funcionesUsuario.res.equals("1")) {
+            this.escenarioPrincipal.cambiarEscenaAdmin();
+        } else if (funcionesUsuario.rl.equals("Usuario") && funcionesUsuario.res.equals("1")) {
             this.escenarioPrincipal.cambiarEscenaEstu();
         }
-        else {
-            this.escenarioPrincipal.cambiarEscenaLogin();
-        }
-
-
-
     }
 
 

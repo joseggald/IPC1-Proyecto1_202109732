@@ -35,12 +35,6 @@
                   <MenuItem mnemonicParsing="false" onAction="#ventanaBilio" text="Registros y Datos de Bibliografía" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Reportes">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Reportes Usuarios" />
-                  <MenuItem mnemonicParsing="false" text="Reportes Libros " />
-            </items>
-          </Menu>
             <Menu mnemonicParsing="false" text="Cuenta">
                <items>
                   <MenuItem fx:id="btnLogOut" mnemonicParsing="false" onAction="#ventanaMain" text="Cerrar Sesión" />

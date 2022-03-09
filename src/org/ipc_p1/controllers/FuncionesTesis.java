@@ -8,6 +8,7 @@ public class FuncionesTesis {
     private static Tesis tesis[]=new Tesis[100];
     private static Tesis bibliotecaUser[][]=new Tesis[100][100];
     public static int cont=1,c,res,lim;
+    public static int[] prestados=new int[100];
     public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
     public static String[] autor=new String[100];
@@ -129,7 +130,6 @@ public class FuncionesTesis {
         }
         if (li>0){
             for(int k=0; k<li; k++){
-
                 if(bibliotecaUser[pos][k].getCod().equals(cod)){
                     res=2;
                     k=li;
@@ -137,14 +137,12 @@ public class FuncionesTesis {
                     res=1;
                 }
             }
-
         }
         if(res==1){
             for (int i=0; i<(cont); i++){
                 if(tesis[i].getCod().equals(cod)){
                     for(int j=0; j<(col[pos]); j++){
                         if(bibliotecaUser[pos][j]==null){
-
                             if(tesis[i].getDisp()<1){
                                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
@@ -162,6 +160,7 @@ public class FuncionesTesis {
                                 aviso.setHeaderText("Fue agregado exitosamente a su biblioteca de prestamos de tesis!");
                                 aviso.setContentText("Puede continuar!");
                                 aviso.show();
+                                prestados[pos]=prestados[pos]+1;
                                 col[pos]=col[pos]+1;
                                 j=col[pos];
                                 i=cont;
@@ -182,6 +181,7 @@ public class FuncionesTesis {
                 bibliotecaUser[pos][col[pos]-1]=null;
                 tesis[i].setDisp(tesis[i].getDisp()+1);
                 col[pos]=col[pos]-1;
+                prestados[pos]=prestados[pos]-1;
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Fue devuelta exitosamente la tesis!");
@@ -189,7 +189,6 @@ public class FuncionesTesis {
                 aviso.show();
             }
         }
-
     }
     //Seteado
     public static String autorUser(int pos,int j){

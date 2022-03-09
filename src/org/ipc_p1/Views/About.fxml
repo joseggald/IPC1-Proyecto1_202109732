@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ipc_p1.controllers.AboutController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="165.0" layoutY="29.0" stroke="#1d4a6f" strokeType="INSIDE" width="202.0" />
+      <Label id="titulo-text" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="29.0" prefHeight="43.0" prefWidth="202.0" text="About" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="318.0" layoutX="22.0" layoutY="88.0" stroke="#1d4a6f" strokeType="INSIDE" width="481.0" />
+      <Label contentDisplay="TOP" layoutX="44.0" layoutY="100.0" prefHeight="31.0" prefWidth="444.0" text="El siguiente programa fue desarolldoa por José Galdámez, " textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelar" layoutX="202.0" layoutY="332.0" mnemonicParsing="false" onAction="#ventanaMain" prefHeight="43.0" prefWidth="128.0" text="Regresar" />
+      <Label contentDisplay="CENTER" graphicTextGap="10.0" layoutX="115.0" layoutY="131.0" prefHeight="31.0" prefWidth="294.0" text="Estudiante de Ingeniería en sistemas. " textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" graphicTextGap="10.0" layoutX="43.0" layoutY="179.0" prefHeight="103.0" prefWidth="444.0" text="El programa esta enfocado en el una simulación de registro &#10;de biblioteca de USAC,teniendo apartado de usuarios &#10;como administradores con sus respecticvas funciones." textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

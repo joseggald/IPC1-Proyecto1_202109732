@@ -8,6 +8,7 @@ public class FuncionesRevistas {
     private static Revistas revistas[]=new Revistas[100];
     private static Revistas bibliotecaUser[][]=new Revistas[100][100];
     public static int cont=1,c,res,lim;
+    public static int[] prestados=new int[100];
     public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 
     public static String[] cod=new String[100];
@@ -45,6 +46,7 @@ public class FuncionesRevistas {
         c=cont-1;
         return c;
     }
+
     //MODIFICAR
     public static void modificarRevista(String codigo,String autor, int año, String titulo, int edicion, String desc, String cate, String temas, int ejemplares, int copias, int disp, String palabras){
         for (int i=0; i<(cont); i++){
@@ -117,6 +119,7 @@ public class FuncionesRevistas {
                                 aviso.setHeaderText("Fue agregado exitosamente a su biblioteca de prestamos de revistas!");
                                 aviso.setContentText("Puede continuar!");
                                 aviso.show();
+                                prestados[pos]=prestados[pos]+1;
                                 col[pos]=col[pos]+1;
                                 j=col[pos];
                                 i=cont;
@@ -254,6 +257,7 @@ public class FuncionesRevistas {
                 bibliotecaUser[pos][col[pos]-1]=null;
                 revistas[i].setDisp(revistas[i].getDisp()+1);
                 col[pos]=col[pos]-1;
+                prestados[pos]=prestados[pos]-1;
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Fue devuelto exitosamente el libro!");

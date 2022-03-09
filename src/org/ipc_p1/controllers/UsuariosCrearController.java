@@ -1,5 +1,7 @@
 package org.ipc_p1.controllers;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -37,38 +39,53 @@ public class UsuariosCrearController implements Initializable {
         this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
     }
 
-    public void crearUsuario(){
+    public void crearUsuario() {
         String usuario, nombre, apellido, rol, password, password2;
-        int dpi, a=1;
-        dpi=Integer.parseInt(txtDpi.getText());
-        usuario=txtUsuario.getText();
-        nombre=txtNombre.getText();
-        apellido=txtApellido.getText();
-        rol=cmbRol.getSelectionModel().getSelectedItem();
-        password=txtPassword.getText();
-        password2=txtPassRevisar.getText();
-        System.out.println(rol=cmbRol.getSelectionModel().getSelectedItem());
+        int dpi, a = 1;
+        String array[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        for (int i = 0; i < array.length; i++) {
+            if (txtDpi.getText().contains(array[i])) {
+                Alert aviso = new Alert(Alert.AlertType.ERROR);
+                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                aviso.setHeaderText("ERROR!");
+                aviso.setContentText("El DPI no puede llevar letras.");
+                aviso.show();
+                a=2;
+            }
 
-        if(rol==null){
+        }
+        rol=cmbRol.getSelectionModel().getSelectedItem();
+        if(txtUsuario.getText().isEmpty() || txtApellido.getText().isEmpty() || txtNombre.getText().isEmpty() || txtPassword.getText().isEmpty() || txtPassRevisar.getText().isEmpty()||txtDpi.getText().trim().isEmpty()){
             Alert aviso = new Alert(Alert.AlertType.ERROR);
             aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("Registro no guardado!");
-            aviso.setContentText("Seleccione un rol.");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("No deje campos vacios.");
             aviso.show();
-        }
-        if(rol!=null){
-            if(password.equals(password2) && txtDpi.getText().length()>2 && txtNombre.getText().length()>2 && txtPassword.getText().length()>2 && txtApellido.getText().length()>2 && txtPassRevisar.getText().length()>2 && txtUsuario.getText().length()>2 ){
+        }else if(rol==null){
+            Alert aviso = new Alert(Alert.AlertType.ERROR);
+            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+            aviso.setHeaderText("ERROR!");
+            aviso.setContentText("Seleccione un rol.");
+        }else if(a!=2){
+            dpi=Integer.parseInt(txtDpi.getText());
+            usuario=txtUsuario.getText();
+            nombre=txtNombre.getText();
+            apellido=txtApellido.getText();
+            password=txtPassword.getText();
+            password2=txtPassRevisar.getText();
+            if(password.equals(password2)){
                 funcionesUsuario.crearUsuario(dpi,nombre,apellido,usuario,password,rol);
                 this.escenarioPrincipal.cambiarEscenaVentanaUsuarios();
             }else{
                 Alert aviso = new Alert(Alert.AlertType.ERROR);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Registro no guardado!");
-                aviso.setContentText("Datos erroneos o Contraseñas no coiciden. Revise si lleno corectamente los campos.");
+                aviso.setContentText("Contraseñas no coiciden. Revise si lleno corectamente los campos.");
                 aviso.show();
             }
         }
     }
+
 
 
 }

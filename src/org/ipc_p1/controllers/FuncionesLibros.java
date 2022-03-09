@@ -5,13 +5,13 @@ import org.ipc_p1.models.*;
 
 public class FuncionesLibros {
 
-    public static int cont=1, c,res,lim;
+    public static int cont=1, c,res,lim, a=0;
     public static int[] col=new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    public static int[] prestados=new int[100];
 
     //VARIABLES PRINCIPALES
     private static Libros libros[]=new Libros[100];
     private static Libros bibliotecaUser[][]=new Libros[100][100];
-
 
 
     //DATOS A MOSTRAR
@@ -25,6 +25,7 @@ public class FuncionesLibros {
     public static String[] temas=new String[100];
     public static int[] copias=new int[100];
     public static int[] disp=new int[100];
+
     //crear
     public static void crearLibro(String aut, int ano, String titulo, int edicion, int isbn, String palabras, String desc, String temas, int copias, int disp){
             for (int i=0; i<(cont); i++){
@@ -38,13 +39,13 @@ public class FuncionesLibros {
                     cont=cont+1;
                     i=cont;
                 }
-
             }
     }
     public static int lim(){
         c=cont-1;
         return c;
     }
+
     //modificar
     public static void modificarLibro(String aut, int ano, String titulo, int edicion, int isbn, String palabras, String desc, String temas, int copias, int disp){
         for (int i=0; i<(cont); i++){
@@ -60,6 +61,7 @@ public class FuncionesLibros {
             }
         }
     }
+
     //eliminar
     public static void eliminarLibro(int isbn, String autor, String titulo){
         for (int i=0; i<(cont); i++){
@@ -79,6 +81,7 @@ public class FuncionesLibros {
         }
 
     }
+
     //prestar
     public static void agregar(int cod, int pos){
         int li=col[pos]-1;
@@ -119,6 +122,7 @@ public class FuncionesLibros {
                             aviso.setHeaderText("Fue agregado exitosamente a su biblioteca de prestamos de libros!");
                             aviso.setContentText("Puede continuar!");
                             aviso.show();
+                            prestados[pos]=prestados[pos]+1;
                             col[pos]=col[pos]+1;
                             j=col[pos];
                             i=cont;
@@ -130,6 +134,7 @@ public class FuncionesLibros {
         }
 
     }
+
     //Traslado de datos a tabla
     public static String mostrarAutor(int o){
         autor[o]=libros[o].getAutor();
@@ -171,6 +176,7 @@ public class FuncionesLibros {
         disp[o]=libros[o].getDisp();
         return disp[o];
     }
+
     //Prestamos
     public static int limite(int o){
         int a;
@@ -185,6 +191,8 @@ public class FuncionesLibros {
                 bibliotecaUser[pos][col[pos]-1]=null;
                 libros[i].setDisp(libros[i].getDisp()+1);
                 col[pos]=col[pos]-1;
+                prestados[pos]=prestados[pos]-1;
+
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Fue devuelto exitosamente el libro!");
@@ -194,6 +202,7 @@ public class FuncionesLibros {
         }
 
     }
+
     //Seteado de valores
     public static String autorUser(int pos,int j){
         String autor;
@@ -245,5 +254,6 @@ public class FuncionesLibros {
         a= bibliotecaUser[pos][j].getDisp();
         return a;
     }
+
 
 }

@@ -18,7 +18,7 @@
             <Font size="29.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="548.0" layoutX="21.0" layoutY="92.0" stroke="#1d4a6f" strokeType="INSIDE" width="953.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="548.0" layoutX="21.0" layoutY="92.0" stroke="#1d4a6f" strokeType="INSIDE" width="961.0" />
       <TableView fx:id="tblLibro" layoutX="31.0" layoutY="185.0" prefHeight="263.0" prefWidth="934.0">
         <columns>
           <TableColumn fx:id="colAutor" prefWidth="114.99996948242188" text="Autor" />
@@ -75,7 +75,6 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="txtCopias" layoutX="1115.0" layoutY="358.0" />
       <Label layoutX="1055.0" layoutY="359.0" text="Copias:">
          <font>
             <Font size="16.0" />
@@ -105,5 +104,6 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <TextField fx:id="txtCopias" layoutX="1116.0" layoutY="356.0" />
    </children>
 </AnchorPane>

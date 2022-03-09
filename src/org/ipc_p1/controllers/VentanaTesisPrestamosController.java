@@ -140,6 +140,305 @@ public class VentanaTesisPrestamosController implements Initializable {
                 colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
                 tblLibro.setItems(tesisTable);
             }
+            if(cont==5){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==6){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==7){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==8){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==9){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==10){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==11){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==12){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==13){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==14){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==15){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==16){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14],tesis[15]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==17){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14],tesis[15],tesis[16]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==18){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14],tesis[15],tesis[16],tesis[17]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==19){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14],tesis[15],tesis[16],tesis[17],tesis[18]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+            if(cont==20){
+                tesisTable= FXCollections.observableArrayList(
+                        tesis[0],tesis[1],tesis[2],tesis[3],tesis[4],tesis[5],tesis[6],tesis[7],tesis[8],tesis[9],
+                        tesis[10],tesis[11],tesis[12],tesis[13],tesis[14],tesis[15],tesis[16],tesis[17],tesis[18],tesis[19]
+                );
+                colCod.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("cod"));
+                colAutor.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("autor"));
+                colTitulo.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("titulo"));
+                colPalabras.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("palabras"));
+                colDesc.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("desc"));
+                colTema.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("temas"));
+                colArea.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("areas"));
+                colAno.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("año"));
+                colEdicion.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("edicion"));
+                colCopias.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("copias"));
+                colDisp.setCellValueFactory(new PropertyValueFactory<TesisBiblio, Integer>("disp"));
+                colPrestar.setCellValueFactory(new PropertyValueFactory<TesisBiblio, String>("btnPrestar"));
+                tblLibro.setItems(tesisTable);
+            }
+
             FilteredList<TesisBiblio> filtro= new FilteredList<>(tesisTable, b -> true);
 
             txtBuscar.textProperty().addListener((observable, oldValue, newValue)->{
@@ -218,6 +517,108 @@ public class VentanaTesisPrestamosController implements Initializable {
         }
         if(actionEvent.getSource()==btnPrestar[3]){
             codigo=cod[3];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[4]){
+            codigo=cod[4];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[5]){
+            codigo=cod[5];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[6]){
+            codigo=cod[6];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[7]){
+            codigo=cod[7];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[8]){
+            codigo=cod[8];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[9]){
+            codigo=cod[9];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[10]){
+            codigo=cod[10];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[11]){
+            codigo=cod[11];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[12]){
+            codigo=cod[12];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[13]){
+            codigo=cod[13];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[14]){
+            codigo=cod[14];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[15]){
+            codigo=cod[15];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[16]){
+            codigo=cod[16];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[17]){
+            codigo=cod[17];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[18]){
+            codigo=cod[18];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[19]){
+            codigo=cod[19];
+            System.out.println(codigo);
+            FuncionesTesis.agregar(codigo,user);
+            this.escenarioPrincipal.cambiarEscenaPrestamosTesis();
+        }
+        if(actionEvent.getSource()==btnPrestar[20]){
+            codigo=cod[20];
             System.out.println(codigo);
             FuncionesTesis.agregar(codigo,user);
             this.escenarioPrincipal.cambiarEscenaPrestamosTesis();

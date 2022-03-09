@@ -5,7 +5,7 @@ import org.ipc_p1.models.Usuario;
 
 public class FuncionesUsuario {
     //VARIABLES PRINCIPALES
-    public static int limite=100, loginNoFound=0, cont=2, c, actual;
+    public static int limite=100, loginNoFound=0, cont=2, c, actual,a;
     private static Usuario users[]=new Usuario[100];
     public static String rl;
     //DATOS A MOSTRAR
@@ -19,9 +19,7 @@ public class FuncionesUsuario {
 
     //VARIABLES EXTRAS
     String res;
-
-    //LOGIN
-    public void login(String username, String password){
+    public static int inicio(){
         users[0]=user;
         dpi[0]=user.getDpi();
         nom[0]=user.getNombre();
@@ -30,30 +28,31 @@ public class FuncionesUsuario {
         pass[0]=user.getPassword();
         rol[0]=user.getRol();
         users[1]=new Usuario(202001543,"alum","1234","Eduardo","Gonzalez","Usuario");
+        a=1;
+        return a;
+    }
+
+    //LOGIN
+    public void login(String username, String password){
         for (int i=0; i<cont; i++){
-            if(username.equals(users[i].getUsername()) && password.equals(users[i].getPassword()) && username.length()>2 && password.length()>2){
+            if(username.equals(users[i].getUsername()) && password.equals(users[i].getPassword())){
                 Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
                 aviso.setHeaderText("Login");
                 aviso.setContentText("Bienvenido de nuevo "+users[i].getNombre()+ " "+ users[i].getApellido()+"!");
                 aviso.show();
-                rl=users[i].getRol();
                 res="1";
-                loginNoFound=0;
+                rl=users[i].getRol();
+                loginNoFound=2;
                 actual=i;
                 i=limite;
             }else{
                 loginNoFound=1;
+                res="2";
+                rl="";
             }
         }
-        if(loginNoFound==1){
-            Alert aviso = new Alert(Alert.AlertType.ERROR);
-            aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-            aviso.setHeaderText("Login");
-            aviso.setContentText("Datos erroneos, porfavor vuelva a intentar.");
-            aviso.show();
-            res="0";
-        }
+
     }
 
 
@@ -61,20 +60,19 @@ public class FuncionesUsuario {
     public static void crearUsuario(int dp, String nombre, String apellido, String usuario, String password, String rol){
         int r=1;
         for (int i=0; i<cont; i++){
-            if(users[i].getDpi()==dp){
-                r=1;
-                Alert aviso = new Alert(Alert.AlertType.ERROR);
-                aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
-                aviso.setHeaderText("NO REGISTRADO");
-                aviso.setContentText("El DPI no puede repertirse en otro usuario.");
-                aviso.show();
-                i=cont;
-                dp=0;
-            }
-            else{
-                r=0;
+                if (users[i].getDpi() == dp) {
+                    r = 1;
+                    Alert aviso = new Alert(Alert.AlertType.ERROR);
+                    aviso.setTitle("SISTEMA DE BIBLIOTECA USAC");
+                    aviso.setHeaderText("NO REGISTRADO");
+                    aviso.setContentText("El DPI no puede repertirse en otro usuario.");
+                    aviso.show();
+                    i = cont;
+                    dp = 0;
+                } else {
+                    r = 0;
 
-            }
+                }
         }
         if(r==0){
             for (int i=1; i<=(cont); i++){
